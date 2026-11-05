@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<!-- الرابط بالميتا: nabdnet.netlify.app -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#04060E">
+<title>نبض — قياس سرعة الإنترنت</title>
+<link rel="canonical" href="https://nabdnet.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="نبض">
+<meta property="og:url" content="https://nabdnet.netlify.app/">
+<meta property="og:locale" content="ar_IQ">
+<meta property="og:title" content="نبض — قياس سرعة الإنترنت">
+<meta property="og:description" content="قياس دقيق لسرعة خطك: تحميل، رفع، بِنغ تحت الضغط، كشف تحديد السرعة، ومقارنة المسار المحلي بالدولي.">
+<meta property="og:image" content="https://nabdnet.netlify.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="نبض — قياس سرعة الإنترنت">
+<meta name="twitter:description" content="قياس دقيق لسرعة خطك، محلي ودولي، مع كشف تحديد السرعة.">
+<meta name="twitter:image" content="https://nabdnet.netlify.app/og.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="نبض">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="قياس سرعة الإنترنت: تحميل، رفع، بِنغ تحت الضغط، كشف تحديد السرعة عند المزوّد، ومقارنة خطك المحلي بالدولي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%2304060E'/><path d='M3 19h5l3-9 4 15 3-11 2 5h9' fill='none' stroke='%23FFB020' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<style>
+:root{
+  --void:#04060E; --p1:#0A1020; --p2:#0E1628; --p3:#141F36; --p4:#1B2A47;
+  --ln:#182541; --ln2:#26375A;
+  --tx:#EAF0FB; --dm:#7F92B4; --dm2:#54688C;
+  --am:#FFB020; --cy:#2FD8EE; --co:#FF6B5B; --mn:#43E39B; --vi:#A78BFA; --mg:#FF5FA2;
+  --nj:#D946EF; --nj2:#9333EA;
+  --njlogo:url(data:image/webp;base64,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);
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --sans:"IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,sans-serif;
+  --e:cubic-bezier(.22,.61,.36,1);
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--void);color:var(--tx);font-family:var(--sans);font-size:15px;line-height:1.6;
+  min-height:100dvh;overflow-x:hidden;position:relative}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
+#glow{position:fixed;inset:0;z-index:0;pointer-events:none;transition:background 1.2s var(--e);
+  background:radial-gradient(760px 520px at 50% 4%, rgba(255,176,32,.13), transparent 60%),
+             radial-gradient(620px 480px at 88% 42%, rgba(47,216,238,.07), transparent 62%),
+             radial-gradient(560px 420px at 8% 62%, rgba(167,139,250,.06), transparent 62%)}
+.app{position:relative;z-index:2}
+button,input{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--am);outline-offset:3px;border-radius:8px}
+::selection{background:rgba(255,176,32,.3)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
+.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+
+/* ══ header ══ */
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(18px) saturate(1.4);
+  background:linear-gradient(to bottom,rgba(4,6,14,.95),rgba(4,6,14,.7));border-bottom:1px solid var(--ln)}
+.bar{display:flex;align-items:center;gap:10px;height:58px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:19px;letter-spacing:.2px}
+.logo em{font-family:var(--mono);font-style:normal;font-size:9.5px;color:#4E6187;letter-spacing:2.6px;margin-top:3px}
+.sp{flex:1}
+.pill{display:inline-flex;align-items:center;gap:7px;height:31px;padding:0 11px;border:1px solid var(--ln);
+  border-radius:99px;background:rgba(14,22,40,.7);font-family:var(--mono);font-size:11px;color:var(--dm);
+  white-space:nowrap;transition:.2s var(--e)}
+.pill b{color:var(--tx);font-weight:600}
+.pill.act{border-color:var(--ln2);color:var(--tx)}
+button.pill:hover{border-color:var(--ln2);background:var(--p3)}
+.led{width:7px;height:7px;border-radius:99px;background:#3A4A69;flex:none;transition:.3s}
+.led.ok{background:var(--mn);box-shadow:0 0 10px var(--mn)}
+.led.bad{background:var(--co);box-shadow:0 0 10px var(--co)}
+.led.run{background:var(--am);box-shadow:0 0 10px var(--am);animation:bp 1.1s infinite}
+@keyframes bp{0%,100%{opacity:1}50%{opacity:.25}}
+@media(max-width:600px){.hidesm{display:none}a.njchip{padding:2px}}
+
+/* ══ console ══ */
+.console{margin-top:16px;border:1px solid var(--ln);border-radius:22px;position:relative;overflow:hidden;
+  background:linear-gradient(165deg,rgba(20,31,54,.86),rgba(10,16,32,.9));
+  box-shadow:0 30px 80px -50px #000, inset 0 1px 0 rgba(255,255,255,.04)}
+.scan{position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.012) 3px 4px)}
+.pline{height:2px;background:#111C31;position:relative;overflow:hidden;z-index:3}
+.pline i{position:absolute;inset-block:0;inset-inline-start:0;inset-inline-end:100%;
+  background:linear-gradient(to left,var(--am),var(--cy));transition:inset-inline-end .3s var(--e);
+  box-shadow:0 0 12px var(--am)}
+.cin{padding:20px 16px 18px;display:grid;gap:20px;position:relative;z-index:2;justify-items:center}
+.cin>*{min-width:0;max-width:100%;width:100%}
+@media(min-width:900px){.cin{grid-template-columns:minmax(0,410px) minmax(0,1fr);padding:26px 26px 22px;gap:30px;align-items:center;justify-items:stretch}}
+
+/* ══ dial ══ */
+.dialbox{position:relative;width:100%;max-width:430px;margin-inline:auto;justify-self:center}
+.dial{width:100%;height:auto;display:block;overflow:visible;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dial .trk{fill:none;stroke:#0F1829;stroke-width:9;stroke-linecap:round}
+.dial .arc{fill:none;stroke-width:9;stroke-linecap:round}
+.dial .tk{stroke:#1F2D48;stroke-width:1.7;stroke-linecap:round;transition:stroke .16s linear}
+.dial .tk.M{stroke:#3B5077;stroke-width:2.8}
+.dial .tk.on{stroke:var(--gc,#FFB020)}
+.dial .tk.M.on{stroke:#FFF0C4}
+.dial .lb{fill:#566990;font-family:var(--mono);font-size:12.5px;font-weight:500;
+  text-anchor:middle;transition:fill .2s}
+.dial .lb.on{fill:#D6E1F2}
+#needle{transform-box:view-box;transform-origin:200px 200px}
+.readout{position:absolute;inset-inline:0;top:57.5%;transform:translateY(-50%);
+  display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.rdico{color:var(--gc,#FFB020);opacity:.95;transition:color .3s;height:19px}
+.big{font-family:var(--mono);font-weight:600;font-size:clamp(46px,13.5vw,68px);line-height:1.02;
+  letter-spacing:-1.5px;direction:ltr;font-variant-numeric:tabular-nums;margin-top:3px;
+  text-shadow:0 0 46px rgba(255,176,32,.34)}
+.unit{font-family:var(--mono);font-size:11.5px;letter-spacing:3.2px;color:#6E84AC;margin-top:5px}
+.ph{font-family:var(--mono);font-size:9.5px;letter-spacing:2.2px;color:#4E6187;min-height:13px;
+  text-transform:uppercase;margin-top:9px}
+.subrd{font-family:var(--mono);font-size:10.5px;color:#5C7196;direction:ltr;min-height:14px;margin-top:1px}
+.dialtabs{display:flex;gap:5px;margin-top:11px;pointer-events:auto}
+.dialtabs button{width:24px;height:4px;border-radius:99px;background:#23324D;transition:.25s var(--e)}
+.dialtabs button[aria-pressed="true"]{background:var(--gc,#FFB020);box-shadow:0 0 12px var(--gc,#FFB020);width:34px}
+.dialtabs button:hover{background:#3B5077}
+
+/* ══ controls ══ */
+.ctl{display:flex;flex-direction:column;gap:13px}
+.go{position:relative;height:58px;border-radius:15px;font-weight:700;font-size:17.5px;overflow:hidden;
+  background:linear-gradient(135deg,#FFC85C,#FF9505);color:#170F02;letter-spacing:.4px;
+  box-shadow:0 10px 34px -12px rgba(255,176,32,.8);transition:.2s var(--e)}
+.go::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.42),transparent 70%);
+  transform:translateX(-130%);animation:sheen 3.4s infinite}
+@keyframes sheen{0%,55%{transform:translateX(-130%)}100%{transform:translateX(130%)}}
+.go:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(255,176,32,.95)}
+.go:active{transform:scale(.985)}
+.go[data-s="run"]{background:linear-gradient(135deg,#2A3A5C,#18233B);color:var(--tx);box-shadow:none;border:1px solid var(--ln2)}
+.go[data-s="run"]::after{display:none}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mode{border:1px solid var(--ln);background:rgba(14,22,40,.6);border-radius:12px;padding:9px 8px;text-align:center;
+  transition:.2s var(--e);position:relative;overflow:hidden}
+.mode b{display:block;font-size:13.5px;font-weight:600}
+.mode span{display:block;font-family:var(--mono);font-size:9px;color:#5C7196;margin-top:1px;letter-spacing:.2px}
+.mode:hover{border-color:var(--ln2);transform:translateY(-2px)}
+.mode[aria-pressed="true"]{border-color:var(--am);background:rgba(255,176,32,.09)}
+.mode[aria-pressed="true"] span{color:var(--am)}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);
+  border-radius:12px;overflow:hidden}
+.strip div{background:rgba(10,16,32,.8);padding:8px 6px;text-align:center}
+.strip .k{font-size:9.5px;color:#5C7196;font-family:var(--mono);letter-spacing:.6px}
+.strip .v{font-family:var(--mono);font-size:14.5px;font-weight:600;margin-top:1px;direction:ltr}
+
+/* ══ route map ══ */
+.route{border:1px solid var(--ln);border-radius:12px;background:rgba(10,16,32,.6);padding:10px 12px 6px}
+.route svg{width:100%;height:auto;display:block;overflow:visible}
+.hop{fill:#5C7196;font-family:var(--mono);font-size:8.5px;text-anchor:middle}
+.hopv{fill:var(--tx);font-family:var(--mono);font-size:10px;text-anchor:middle;font-weight:600}
+
+/* ══ metric cards ══ */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+@media(min-width:820px){.cards{grid-template-columns:repeat(4,1fr)}}
+.mc{border:1px solid var(--ln);border-radius:var(--r);background:linear-gradient(160deg,rgba(14,22,40,.9),rgba(10,16,32,.9));
+  padding:13px 13px 8px;position:relative;overflow:hidden;text-align:start;transition:.22s var(--e)}
+.mc:hover{border-color:var(--c);transform:translateY(-3px);box-shadow:0 18px 40px -26px var(--c)}
+.mc::before{content:"";position:absolute;top:0;inset-inline:0;height:2px;background:var(--c);opacity:.7}
+.mc .k{font-size:11.5px;color:var(--dm);display:flex;align-items:center;gap:5px}
+.mc .n{font-family:var(--mono);font-size:26px;font-weight:600;line-height:1.2;margin-top:3px;direction:ltr;color:var(--c)}
+.mc .n s{text-decoration:none;font-size:10.5px;color:var(--dm);margin-inline-start:3px}
+.mc .d{font-family:var(--mono);font-size:9.5px;color:#5C7196;direction:ltr;min-height:13px}
+.mc .sk{width:100%;height:26px;display:block;margin-top:4px;opacity:.85}
+.mc.dl{--c:var(--am)} .mc.ul{--c:var(--cy)} .mc.pg{--c:var(--mn)} .mc.jt{--c:var(--vi)}
+
+/* ══ generic panel ══ */
+.pnl{margin-top:12px;border:1px solid var(--ln);border-radius:var(--r);overflow:hidden;
+  background:linear-gradient(165deg,rgba(14,22,40,.86),rgba(10,16,32,.9))}
+.pnl>h2{font-size:13.5px;font-weight:600;padding:12px 15px;display:flex;align-items:center;gap:8px;
+  border-bottom:1px solid var(--ln);background:rgba(20,31,54,.6)}
+.pnl>h2 em{font-family:var(--mono);font-style:normal;font-size:9.5px;color:#4E6187;letter-spacing:1.6px;
+  margin-inline-start:auto;text-transform:uppercase}
+.bd{padding:14px 15px}
+.cbox{width:100%;direction:ltr;overflow:hidden}
+.cbox svg{width:100%;display:block}
+.lg{display:flex;gap:13px;flex-wrap:wrap;margin-top:8px;font-family:var(--mono);font-size:10.5px;color:var(--dm)}
+.lg i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:5px;vertical-align:0}
+.ax{fill:#4E6187;font-family:var(--mono);font-size:10px}
+.gl{stroke:#111C31;stroke-width:1}
+
+/* ══ capability sim ══ */
+.caps{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(232px,1fr))}
+.cap{display:flex;align-items:center;gap:11px;border:1px solid var(--ln);border-radius:12px;
+  background:rgba(10,16,32,.65);padding:10px 12px;position:relative;overflow:hidden;transition:.2s var(--e)}
+.cap:hover{transform:translateX(-3px);border-color:var(--c)}
+.cap .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;color:var(--c);
+  background:rgba(255,255,255,.045);border:1px solid var(--ln)}
+.cap .t{font-size:13px;font-weight:500;line-height:1.3}
+.cap .m{font-family:var(--mono);font-size:9.5px;color:#5C7196;direction:ltr}
+.cap .bar{position:absolute;bottom:0;inset-inline-start:0;height:2px;background:var(--c);transition:width 1s var(--e)}
+.cap[data-r="pass"]{--c:var(--mn)} .cap[data-r="warn"]{--c:var(--am)} .cap[data-r="fail"]{--c:var(--co)}
+
+/* ══ score ══ */
+.sc{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.ring{position:relative;width:132px;height:132px;flex:none}
+.ring svg{transform:rotate(-90deg)}
+.ring .b{fill:none;stroke:#101B2E;stroke-width:10}
+.ring .f{fill:none;stroke:var(--am);stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset 1.2s var(--e),stroke .6s}
+.ring .lb{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring .lb b{font-family:var(--mono);font-size:34px;font-weight:600;line-height:1}
+.ring .lb i{font-family:var(--mono);font-style:normal;font-size:9px;color:var(--dm);letter-spacing:1.4px}
+.bks{flex:1;min-width:240px;display:flex;flex-direction:column;gap:6px}
+.bk{display:flex;align-items:center;gap:8px;font-size:12px}
+.bk .n{color:var(--dm);width:76px;flex:none}
+.bk .t{flex:1;height:6px;border-radius:99px;background:#101B2E;overflow:hidden}
+.bk .t i{display:block;height:100%;border-radius:99px;background:var(--c);transition:width .9s var(--e)}
+.bk .v{font-family:var(--mono);font-size:10.5px;color:var(--dm);width:42px;text-align:end;direction:ltr;flex:none}
+
+/* ══ verdict banner ══ */
+.vb{display:flex;align-items:center;gap:13px;border-radius:13px;padding:12px 14px;border:1px solid var(--c);
+  background:linear-gradient(100deg,color-mix(in srgb,var(--c) 12%,transparent),transparent)}
+.vb .g{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;flex:none;font-family:var(--mono);
+  font-weight:700;font-size:24px;color:var(--c);background:rgba(255,255,255,.04);border:1px solid var(--c)}
+.vb .t{font-weight:600;font-size:14px} .vb .s{font-size:12.5px;color:var(--dm);line-height:1.55}
+.gA{--c:var(--mn)} .gB{--c:#A6E05A} .gC{--c:var(--am)} .gD{--c:#FF8A4C} .gF{--c:var(--co)} .gN{--c:var(--ln2)}
+
+/* ══ tabs ══ */
+.tabs{display:flex;gap:3px;padding:5px;background:rgba(20,31,54,.6);border-bottom:1px solid var(--ln);
+  overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{padding:8px 13px;border-radius:9px;font-size:12.5px;color:var(--dm);white-space:nowrap;transition:.2s}
+.tabs button[aria-selected="true"]{background:var(--p4);color:var(--tx)}
+.tabs button:hover{color:var(--tx)}
+.pane[hidden]{display:none}
+
+/* ══ rows / minis ══ */
+.rows{display:flex;flex-direction:column;gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:12px;overflow:hidden}
+.rw{display:flex;align-items:center;gap:9px;padding:9px 12px;background:rgba(10,16,32,.85);font-size:12.5px;transition:.15s}
+.rw:hover{background:var(--p3)}
+.rw .n{flex:1;color:var(--dm);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rw .v{font-family:var(--mono);font-size:12px;direction:ltr;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tb{height:5px;border-radius:99px;background:#101B2E;overflow:hidden;flex:1.4;max-width:190px;min-width:44px}
+.tb i{display:block;height:100%;border-radius:99px;background:var(--c);transition:width .8s var(--e)}
+.g3{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(138px,1fr))}
+.mi{border:1px solid var(--ln);border-radius:11px;background:rgba(10,16,32,.6);padding:10px 11px;transition:.2s}
+.mi:hover{border-color:var(--ln2);transform:translateY(-2px)}
+.mi .k{font-size:10.5px;color:#5C7196}
+.mi .v{font-family:var(--mono);font-size:17px;font-weight:600;margin-top:2px;direction:ltr}
+.btn{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-radius:10px;
+  border:1px solid var(--ln2);background:rgba(20,31,54,.7);font-size:12.5px;transition:.18s var(--e)}
+.btn:hover{background:var(--p4);transform:translateY(-2px)}
+.btn.ok{border-color:var(--mn);color:var(--mn)}
+.brow{display:flex;gap:8px;flex-wrap:wrap}
+.inp{flex:1;min-width:180px;height:36px;padding:0 11px;border-radius:10px;border:1px solid var(--ln);
+  background:rgba(8,13,24,.8);font-family:var(--mono);font-size:11.5px;color:var(--tx);direction:ltr}
+.inp:focus{border-color:var(--ln2);outline:none}
+.inp::placeholder{color:#3F5175;direction:rtl}
+.emp{color:#4E6187;font-size:12.5px;text-align:center;padding:22px;font-family:var(--mono)}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .55s var(--e),transform .55s var(--e)}
+.rv.in{opacity:1;transform:none}
+.warn{border:1px solid rgba(255,107,91,.45);background:rgba(255,107,91,.09);border-radius:12px;
+  padding:11px 13px;font-size:12.5px;color:#FFB9B1}
+footer{margin:20px 0 34px;color:#3F5175;font-size:11px;font-family:var(--mono);text-align:center}
+/* ── channel card ── */
+.njmark{width:30px;height:30px;border-radius:99px;flex:none;background:var(--njlogo) center/cover;
+  border:1.5px solid rgba(217,70,239,.55);box-shadow:0 0 14px -2px rgba(217,70,239,.7);transition:.22s var(--e)}
+a.njchip{display:inline-flex;align-items:center;gap:7px;height:34px;padding:2px 12px 2px 2px;flex:none;border-radius:99px;
+  border:1px solid rgba(217,70,239,.35);background:rgba(217,70,239,.07);text-decoration:none;color:var(--tx);
+  font-family:var(--mono);font-size:11px;transition:.22s var(--e)}
+a.njchip:hover{background:rgba(217,70,239,.16);border-color:var(--nj);transform:translateY(-1px)}
+a.njchip:hover .njmark{transform:scale(1.06)}
+.njcard{margin-top:16px;border:1px solid rgba(217,70,239,.3);border-radius:18px;overflow:hidden;position:relative;
+  background:linear-gradient(150deg,rgba(147,51,234,.14),rgba(10,16,32,.9) 55%)}
+.njcard::before{content:"";position:absolute;inset:-40% -20% auto -20%;height:180px;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(217,70,239,.28),transparent)}
+.njin{position:relative;display:flex;align-items:center;gap:16px;padding:18px;flex-wrap:wrap;justify-content:center;
+  text-align:center}
+@media(min-width:640px){.njin{flex-wrap:nowrap;text-align:start;justify-content:flex-start}}
+.njbig{width:74px;height:74px;border-radius:20px;flex:none;background:var(--njlogo) center/cover;
+  border:1px solid rgba(217,70,239,.5);box-shadow:0 0 34px -6px rgba(217,70,239,.75)}
+.njtxt{flex:1;min-width:180px}
+.njtxt b{display:block;font-size:16px;font-weight:700;letter-spacing:.3px}
+.njtxt i{display:block;font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--nj);margin-top:1px}
+.njtxt span{display:block;font-size:12.5px;color:var(--dm);margin-top:5px;line-height:1.55}
+a.njqr{display:block;flex:none;width:132px;padding:9px;border-radius:15px;background:#F7F4FB;
+  border:1px solid rgba(217,70,239,.45);box-shadow:0 10px 30px -12px rgba(217,70,239,.8);
+  transition:.24s var(--e);position:relative}
+a.njqr:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 16px 40px -12px rgba(217,70,239,1)}
+a.njqr svg{display:block;width:100%;height:auto}
+a.njqr .njdot{position:absolute;width:30px;height:30px;border-radius:8px;left:50%;top:50%;
+  transform:translate(-50%,-50%);border:2px solid #F7F4FB;background:var(--njlogo) center/cover}
+.njgo{display:inline-flex;align-items:center;gap:6px;margin-top:8px;height:32px;padding:0 13px;border-radius:99px;
+  background:linear-gradient(135deg,var(--nj),var(--nj2));color:#fff;text-decoration:none;font-size:12.5px;
+  font-weight:600;transition:.2s var(--e)}
+.njgo:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px var(--nj)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="glow"></div>
+<div class="app">
+
+<header>
+  <div class="wrap bar">
+    <div class="logo">
+      <svg width="25" height="25" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0A1020" stroke="#182541"/><path d="M3 19h5l3-9 4 15 3-11 2 5h9" fill="none" stroke="#FFB020" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      نبض<em>NABD</em>
+    </div>
+    <div class="sp"></div>
+    <a class="njchip" href="https://t.me/NJBLACKCROW" target="_blank" rel="noopener" title="قناة NJ BLACK CROW على تليغرام">
+      <span class="njmark" role="img" aria-label="NJ BLACK CROW"></span>
+      <span class="hidesm">@NJBLACKCROW</span></a>
+    <span class="pill" id="pEnd"><span class="led" id="ledEnd"></span><span id="endTxt">جارٍ الاتصال…</span></span>
+    <span class="pill hidesm" id="pIsp">—</span>
+    <button class="pill" id="bUnit" title="تبديل الوحدة"><b id="uTxt">Mbps</b></button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="console">
+    <div class="pline"><i id="prog"></i></div>
+    <div class="scan"></div>
+    <div class="cin">
+
+      <div class="dialbox">
+        <svg class="dial" id="dial" viewBox="0 16 400 320" role="img" aria-label="مقياس السرعة">
+          <defs>
+            <linearGradient id="ga" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#FF7A3D"/><stop offset="45%" stop-color="#FFB020"/><stop offset="100%" stop-color="#FFEDB4"/></linearGradient>
+            <linearGradient id="gu" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#1C7FA6"/><stop offset="45%" stop-color="#2FD8EE"/><stop offset="100%" stop-color="#C6F8FF"/></linearGradient>
+            <linearGradient id="gp" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#1E9C6B"/><stop offset="45%" stop-color="#43E39B"/><stop offset="100%" stop-color="#CFFCE6"/></linearGradient>
+            <linearGradient id="gn" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FFF0C4"/><stop offset="55%" stop-color="#FFB020"/><stop offset="100%" stop-color="#6E5218"/></linearGradient>
+            <filter id="fg" x="-70%" y="-70%" width="240%" height="240%">
+              <feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="fn" x="-160%" y="-160%" width="420%" height="420%">
+              <feGaussianBlur stdDeviation="3.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <g id="ticks"></g>
+          <g id="labels"></g>
+          <path id="trk" class="trk" d=""/>
+          <path id="arc" class="arc" d="" stroke="url(#ga)" filter="url(#fg)"/>
+          <g id="peak"></g>
+          <g id="needle" filter="url(#fn)">
+            <polygon id="ndl" points="200,84 203.6,204 196.4,204" fill="url(#gn)"/>
+          </g>
+          <circle cx="200" cy="200" r="11" fill="#080D18" stroke="#26375A" stroke-width="2"/>
+          <circle id="hub" cx="200" cy="200" r="3.6" fill="#FFB020"/>
+        </svg>
+        <div class="readout">
+          <svg class="rdico" id="rdIco" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13m0 0 5-5m-5 5-5-5"/></svg>
+          <div class="big" id="big">0</div>
+          <div class="unit" id="un">Mbps</div>
+          <div class="ph" id="ph" aria-live="polite">جاهز</div>
+          <div class="subrd" id="sub"></div>
+          <div class="dialtabs" role="group" aria-label="عرض المقياس">
+            <button data-v="dl" aria-pressed="true"  title="التحميل"></button>
+            <button data-v="ul" aria-pressed="false" title="الرفع"></button>
+            <button data-v="pg" aria-pressed="false" title="البِنغ"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ctl">
+        <button class="go" id="go" data-s="idle">ابدأ الفحص</button>
+        <div class="modes" role="group" aria-label="عمق الفحص">
+          <button class="mode" data-m="q" aria-pressed="false"><b>سريع</b><span>15s · 30MB</span></button>
+          <button class="mode" data-m="s" aria-pressed="true"><b>قياسي</b><span>35s · 120MB</span></button>
+          <button class="mode" data-m="d" aria-pressed="false"><b>عميق</b><span>70s · 350MB</span></button>
+        </div>
+        <div class="strip">
+          <div><div class="k">DATA</div><div class="v" id="sData">0.0</div></div>
+          <div><div class="k">TIME</div><div class="v" id="sTime">0.0</div></div>
+          <div><div class="k">STREAMS</div><div class="v" id="sStr">0</div></div>
+          <div><div class="k">PEAK</div><div class="v" id="sPk">—</div></div>
+        </div>
+        <div class="route">
+          <svg id="routeSvg" viewBox="0 0 520 96"></svg>
+        </div>
+        <div id="err"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="mc dl"><div class="k">التحميل</div><div class="n" id="cDl">—<s id="cDlU">Mbps</s></div>
+      <div class="d" id="cDlS"></div><svg class="sk" id="skDl" viewBox="0 0 120 26" preserveAspectRatio="none"></svg></div>
+    <div class="mc ul"><div class="k">الرفع</div><div class="n" id="cUl">—<s id="cUlU">Mbps</s></div>
+      <div class="d" id="cUlS"></div><svg class="sk" id="skUl" viewBox="0 0 120 26" preserveAspectRatio="none"></svg></div>
+    <div class="mc pg"><div class="k">البِنغ</div><div class="n" id="cPg">—<s>ms</s></div>
+      <div class="d" id="cPgS"></div><svg class="sk" id="skPg" viewBox="0 0 120 26" preserveAspectRatio="none"></svg></div>
+    <div class="mc jt"><div class="k">التذبذب</div><div class="n" id="cJt">—<s>ms</s></div>
+      <div class="d" id="cJtS"></div><svg class="sk" id="skJt" viewBox="0 0 120 26" preserveAspectRatio="none"></svg></div>
+  </div>
+
+  <section class="pnl">
+    <h2>المنحنى المباشر<em>live</em></h2>
+    <div class="bd">
+      <div class="cbox"><svg id="trace"></svg></div>
+      <div class="lg"><span><i style="background:#FFB020"></i>تحميل</span><span><i style="background:#2FD8EE"></i>رفع</span><span><i style="background:#FF6B5B"></i>بِنغ</span></div>
+    </div>
+  </section>
+
+  <section class="pnl rv" id="pScore">
+    <h2>الحكم<em>verdict</em></h2>
+    <div class="bd">
+      <div id="vb"></div>
+      <div class="sc" style="margin-top:14px">
+        <div class="ring"><svg viewBox="0 0 132 132" width="132" height="132">
+          <circle class="b" cx="66" cy="66" r="55"/><circle class="f" id="scArc" cx="66" cy="66" r="55" stroke-dasharray="345.6" stroke-dashoffset="345.6"/></svg>
+          <div class="lb"><div><b id="scVal">—</b><br><i>QUALITY</i></div></div></div>
+        <div class="bks" id="bks"></div>
+      </div>
+      <div class="caps" id="caps" style="margin-top:16px"></div>
+    </div>
+  </section>
+
+  <section class="pnl rv" id="pTabs">
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true"  data-p="lat">التأخير</button>
+      <button role="tab" aria-selected="false" data-p="shape">تحديد السرعة</button>
+      <button role="tab" aria-selected="false" data-p="game">الألعاب</button>
+      <button role="tab" aria-selected="false" data-p="stack">الخوادم والدقة</button>
+      <button role="tab" aria-selected="false" data-p="hist">السجل</button>
+    </div>
+    <div class="bd pane" id="pane-lat">
+      <div class="g3" id="latG"></div>
+      <div class="cbox" style="margin-top:12px"><svg id="latC"></svg></div>
+    </div>
+    <div class="bd pane" id="pane-shape" hidden>
+      <div id="shV"></div>
+      <div class="cbox" style="margin-top:12px"><svg id="shC"></svg></div>
+      <div class="g3" style="margin-top:10px" id="shG"></div>
+    </div>
+    <div class="bd pane" id="pane-game" hidden>
+      <div class="rows" id="gameL"><div class="emp">يظهر بعد الفحص</div></div>
+      <div class="g3" style="margin-top:10px" id="gameG"></div>
+    </div>
+    <div class="bd pane" id="pane-stack" hidden>
+      <div id="srvV"></div>
+      <div id="capV" style="margin-top:10px"></div>
+      <div class="cbox" style="margin-top:12px"><svg id="swC"></svg></div>
+      <div class="cbox" style="margin-top:6px"><svg id="cmpC"></svg></div>
+      <div class="g3" style="margin-top:12px" id="accG"></div>
+      <div class="brow" style="margin-top:12px">
+        <input class="inp" id="lsUrl" placeholder="رابط سيرفر LibreSpeed خارجي، يعطي تحميل ورفع كاملين" spellcheck="false">
+        <button class="btn" id="lsSet">استخدمه</button>
+        <button class="btn" id="lsClr">رجوع للتلقائي</button>
+      </div>
+      <div class="cbox" style="margin-top:16px"><svg id="wf"></svg></div>
+      <div class="g3" style="margin-top:12px" id="stG"></div>
+      <div class="rows" id="reachL" style="margin-top:10px"><div class="emp">يظهر بعد الفحص</div></div>
+    </div>
+    <div class="bd pane" id="pane-hist" hidden>
+      <div class="brow" style="margin-bottom:12px">
+        <button class="btn" id="bJson">JSON</button><button class="btn" id="bCopy">نسخ</button>
+        <button class="btn" id="bShare">مشاركة</button><button class="btn" id="bClr">مسح</button>
+      </div>
+      <div class="cbox"><svg id="hsC"></svg></div>
+      <div class="rows" id="hsL" style="margin-top:10px"><div class="emp">لا سجل بعد</div></div>
+    </div>
+  </section>
+
+  <section class="njcard">
+    <div class="njin">
+      <span class="njbig" role="img" aria-label="NJ BLACK CROW"></span>
+      <div class="njtxt">
+        <b>NJ BLACK CROW</b><i>@NJBLACKCROW</i>
+        <span>قناتي الخاصة على تلغرام</span>
+        <a class="njgo" href="https://t.me/NJBLACKCROW" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.4 12.8l-4.8-1.5c-1-.3-1-1 .2-1.5l18.7-7.2c.9-.3 1.6.2 1.4 1.7z"/></svg>
+          افتح القناة</a>
+      </div>
+      <a class="njqr" href="https://t.me/NJBLACKCROW" target="_blank" rel="noopener" aria-label="رمز QR لقناة NJBLACKCROW">
+        <svg viewBox="0 0 39 39" role="img" aria-hidden="true">
+          <defs><linearGradient id="qg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#9333EA"/><stop offset="100%" stop-color="#D946EF"/></linearGradient></defs>
+          <path d="M3.5 3.5h6M12.5 3.5h1M15.5 3.5h3M23.5 3.5h0M26.5 3.5h1M29.5 3.5h6M3.5 4.5h0M9.5 4.5h0M12.5 4.5h2M18.5 4.5h2M27.5 4.5h0M29.5 4.5h0M35.5 4.5h0M3.5 5.5h0M5.5 5.5h2M9.5 5.5h0M11.5 5.5h2M15.5 5.5h1M18.5 5.5h0M23.5 5.5h1M26.5 5.5h1M29.5 5.5h0M31.5 5.5h2M35.5 5.5h0M3.5 6.5h0M5.5 6.5h2M9.5 6.5h0M11.5 6.5h1M16.5 6.5h0M21.5 6.5h1M24.5 6.5h2M29.5 6.5h0M31.5 6.5h2M35.5 6.5h0M3.5 7.5h0M5.5 7.5h2M9.5 7.5h0M11.5 7.5h0M13.5 7.5h0M17.5 7.5h0M20.5 7.5h0M23.5 7.5h1M27.5 7.5h0M29.5 7.5h0M31.5 7.5h2M35.5 7.5h0M3.5 8.5h0M9.5 8.5h0M17.5 8.5h1M20.5 8.5h0M23.5 8.5h0M25.5 8.5h0M29.5 8.5h0M35.5 8.5h0M3.5 9.5h6M11.5 9.5h0M13.5 9.5h0M15.5 9.5h0M17.5 9.5h0M19.5 9.5h0M21.5 9.5h0M23.5 9.5h0M25.5 9.5h0M27.5 9.5h0M29.5 9.5h6M14.5 10.5h3M20.5 10.5h1M24.5 10.5h1M27.5 10.5h0M3.5 11.5h2M8.5 11.5h3M14.5 11.5h1M18.5 11.5h2M23.5 11.5h1M31.5 11.5h2M4.5 12.5h0M7.5 12.5h1M13.5 12.5h0M16.5 12.5h5M23.5 12.5h0M28.5 12.5h1M33.5 12.5h0M35.5 12.5h0M6.5 13.5h0M9.5 13.5h1M19.5 13.5h0M22.5 13.5h0M25.5 13.5h0M28.5 13.5h0M30.5 13.5h0M32.5 13.5h1M3.5 14.5h1M7.5 14.5h1M11.5 14.5h0M17.5 14.5h0M23.5 14.5h0M26.5 14.5h0M28.5 14.5h0M32.5 14.5h1M4.5 15.5h1M9.5 15.5h1M14.5 15.5h1M17.5 15.5h1M20.5 15.5h7M30.5 15.5h0M33.5 15.5h1M3.5 16.5h1M6.5 16.5h0M10.5 16.5h2M15.5 16.5h0M29.5 16.5h0M31.5 16.5h1M35.5 16.5h0M7.5 17.5h0M9.5 17.5h1M12.5 17.5h1M15.5 17.5h0M23.5 17.5h0M25.5 17.5h0M27.5 17.5h0M30.5 17.5h1M34.5 17.5h0M3.5 18.5h1M8.5 18.5h0M12.5 18.5h1M24.5 18.5h2M28.5 18.5h1M31.5 18.5h1M4.5 19.5h3M9.5 19.5h0M13.5 19.5h1M23.5 19.5h0M26.5 19.5h0M28.5 19.5h0M30.5 19.5h0M33.5 19.5h0M35.5 19.5h0M4.5 20.5h0M7.5 20.5h0M11.5 20.5h1M15.5 20.5h0M23.5 20.5h1M26.5 20.5h2M34.5 20.5h0M4.5 21.5h0M6.5 21.5h1M9.5 21.5h0M12.5 21.5h1M15.5 21.5h0M23.5 21.5h0M31.5 21.5h0M33.5 21.5h0M3.5 22.5h0M5.5 22.5h0M7.5 22.5h0M10.5 22.5h1M15.5 22.5h0M23.5 22.5h1M26.5 22.5h2M30.5 22.5h4M3.5 23.5h1M7.5 23.5h3M14.5 23.5h3M20.5 23.5h0M22.5 23.5h0M24.5 23.5h1M27.5 23.5h0M30.5 23.5h2M3.5 24.5h1M11.5 24.5h6M21.5 24.5h2M28.5 24.5h0M32.5 24.5h0M3.5 25.5h0M5.5 25.5h1M8.5 25.5h2M12.5 25.5h0M14.5 25.5h0M19.5 25.5h0M25.5 25.5h2M34.5 25.5h0M3.5 26.5h0M5.5 26.5h0M7.5 26.5h0M10.5 26.5h0M12.5 26.5h1M16.5 26.5h0M18.5 26.5h0M23.5 26.5h0M26.5 26.5h0M31.5 26.5h2M3.5 27.5h0M6.5 27.5h1M9.5 27.5h0M12.5 27.5h0M14.5 27.5h1M17.5 27.5h0M21.5 27.5h10M34.5 27.5h1M11.5 28.5h2M15.5 28.5h6M23.5 28.5h1M27.5 28.5h0M31.5 28.5h0M33.5 28.5h2M3.5 29.5h6M11.5 29.5h2M18.5 29.5h6M27.5 29.5h0M29.5 29.5h0M31.5 29.5h1M34.5 29.5h0M3.5 30.5h0M9.5 30.5h0M11.5 30.5h2M15.5 30.5h0M18.5 30.5h2M24.5 30.5h3M31.5 30.5h4M3.5 31.5h0M5.5 31.5h2M9.5 31.5h0M15.5 31.5h4M21.5 31.5h0M24.5 31.5h0M27.5 31.5h4M33.5 31.5h2M3.5 32.5h0M5.5 32.5h2M9.5 32.5h0M12.5 32.5h0M15.5 32.5h0M17.5 32.5h2M22.5 32.5h0M25.5 32.5h0M28.5 32.5h0M31.5 32.5h0M33.5 32.5h1M3.5 33.5h0M5.5 33.5h2M9.5 33.5h0M11.5 33.5h1M14.5 33.5h0M16.5 33.5h1M20.5 33.5h1M24.5 33.5h1M27.5 33.5h2M32.5 33.5h1M3.5 34.5h0M9.5 34.5h0M11.5 34.5h3M21.5 34.5h1M25.5 34.5h0M27.5 34.5h3M33.5 34.5h0M3.5 35.5h6M11.5 35.5h0M14.5 35.5h8M26.5 35.5h3M32.5 35.5h2" fill="none" stroke="url(#qg)" stroke-width=".92" stroke-linecap="round"/>
+        </svg>
+        <span class="njdot" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <footer>NABD · بلا إعلانات · بلا تتبّع · سجلك يبقى على جهازك</footer>
+</main>
+</div>
+<script>
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const rnd=()=>Math.random().toString(36).slice(2,10);
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const nn=v=>typeof v==='number'&&isFinite(v);
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ═══════════════ LIVING BACKGROUND ═══════════════ */
+const BG=(()=>{
+  const c=$('#bg'); const x=c.getContext('2d');
+  let W=0,H=0,DPR=1,lanes=[],dots=[],burst=[],t=0,raf=null;
+  function size(){
+    DPR=Math.min(2,window.devicePixelRatio||1);
+    W=innerWidth; H=innerHeight;
+    c.width=W*DPR; c.height=H*DPR; c.style.width=W+'px'; c.style.height=H+'px';
+    x.setTransform(DPR,0,0,DPR,0,0);
+    build();
+  }
+  function build(){
+    const N = W<700?7:11;
+    lanes=[];
+    for(let i=0;i<N;i++){
+      const y=(i+.5)/N*H + (Math.random()-.5)*22;
+      lanes.push({y, amp:12+Math.random()*26, ph:Math.random()*6.28, sp:.35+Math.random()*.8});
+    }
+    dots=[];
+    const P = W<700?70:130;
+    for(let i=0;i<P;i++) dots.push(mk(true));
+  }
+  function mk(init){
+    const l=lanes[(Math.random()*lanes.length)|0]||{y:H/2,amp:10,ph:0,sp:1};
+    return {x: init?Math.random()*W:-20, l, v:.4+Math.random()*1.5, s:.7+Math.random()*1.7, a:.15+Math.random()*.5};
+  }
+  function draw(){
+    raf=requestAnimationFrame(draw);
+    if(document.hidden) return;
+    t+=.016;
+    x.clearRect(0,0,W,H);
+    const act = window.__act||0;                 // 0..1 activity from the engine
+    const hue = window.__hue||'am';
+    const col = hue==='cy'?'47,216,238' : hue==='mn'?'67,227,155' : '255,176,32';
+    // drifting dot grid
+    const g=46, off=(t*7)%g;
+    x.fillStyle='rgba(120,150,200,.05)';
+    for(let gx=-g+off;gx<W+g;gx+=g) for(let gy=-g+off;gy<H+g;gy+=g){ x.fillRect(gx,gy,1.3,1.3); }
+    // packet streams
+    const boost=.6+act*4.2;
+    for(const d of dots){
+      d.x += d.v*boost*1.9;
+      if(d.x>W+30){ Object.assign(d, mk(false)); }
+      const y = d.l.y + Math.sin(t*d.l.sp + d.l.ph + d.x*.004)*d.l.amp;
+      const len = 10+d.v*22*boost*.5;
+      const gr=x.createLinearGradient(d.x-len,y,d.x,y);
+      gr.addColorStop(0,`rgba(${col},0)`); gr.addColorStop(1,`rgba(${col},${d.a*(.25+act*.75)})`);
+      x.strokeStyle=gr; x.lineWidth=d.s; x.lineCap='round';
+      x.beginPath(); x.moveTo(d.x-len,y); x.lineTo(d.x,y); x.stroke();
+      if(act>.15){ x.fillStyle=`rgba(${col},${d.a*act})`; x.beginPath(); x.arc(d.x,y,d.s*.75,0,6.29); x.fill(); }
+    }
+    // completion burst
+    for(let i=burst.length-1;i>=0;i--){
+      const b=burst[i]; b.r+=b.v; b.v*=.97; b.a*=.965;
+      if(b.a<.02){ burst.splice(i,1); continue; }
+      x.strokeStyle=`rgba(${col},${b.a})`; x.lineWidth=1.6;
+      x.beginPath(); x.arc(b.x,b.y,b.r,0,6.29); x.stroke();
+    }
+  }
+  addEventListener('resize',()=>{clearTimeout(BG._r); BG._r=setTimeout(size,160);});
+  return {
+    start(){ size(); if(!RM && !raf) draw(); else if(RM){ size(); } },
+    ping(){ if(RM) return; const el=$('#dial').getBoundingClientRect();
+      burst.push({x:el.left+el.width/2, y:el.top+el.height/2, r:20, v:5.5, a:.5}); }
+  };
+})();
+window.__act=0; window.__hue='am';
+
+/* ═══════════════ STATE ═══════════════ */
+const MODES={
+  q:{pings:12,dl:[1e6,5e6,1e7],           dls:4,dlb:6000, ul:[5e5,2e6,5e6],       uls:3,ulb:5000, single:5e6},
+  s:{pings:20,dl:[1e6,1e7,2.5e7,5e7],     dls:6,dlb:11000,ul:[1e6,5e6,1e7],       uls:4,ulb:8000, single:1e7},
+  d:{pings:30,dl:[1e6,1e7,2.5e7,5e7,1e8], dls:8,dlb:20000,ul:[1e6,5e6,1e7,2.5e7], uls:5,ulb:14000,single:2.5e7}
+};
+const S={mode:'s',unit:'Mbps',view:'dl',running:false,abort:null,xhrs:[],ep:null,upOk:true,
+  bytes:0,acc:0,tick:0,t0:0,smp:null,disp:0,streams:0,peak:0,tag:'dl',
+  cf:{dl:{e:0,d:0,n:0},single:{e:0,d:0,n:0},intl:{e:0,d:0,n:0}},
+  dl:[],ul:[],lat:[],idle:[],loadDl:[],loadUl:[],perSize:[],upPerSize:[],
+  dlPhase:null,ulPhase:null,res:{},fails:0,reach:[],game:[],hist:[]};
+
+/* ═══════════════ MATH ═══════════════ */
+function pct(a,p){ if(!a||!a.length)return null; const b=[...a].sort((m,n)=>m-n);
+  return b[clamp(Math.floor(p*(b.length-1)),0,b.length-1)]; }
+const mean=a=>(a&&a.length)?a.reduce((s,v)=>s+v,0)/a.length:null;
+function jit(a){ if(!a||a.length<2)return null; let s=0; for(let i=1;i<a.length;i++)s+=Math.abs(a[i]-a[i-1]); return s/(a.length-1); }
+function sd(a){ if(!a||a.length<2)return null; const m=mean(a); return Math.sqrt(a.reduce((s,v)=>s+(v-m)*(v-m),0)/(a.length-1)); }
+function smooth(a,k){ if(a.length<k)return a.slice(); const o=[];
+  for(let i=k-1;i<a.length;i++){let s=0;for(let j=i-k+1;j<=i;j++)s+=a[j];o.push(s/k);} return o; }
+const fmt=(v,d=1)=>(v==null||!isFinite(v))?'—':v.toFixed(d);
+function sp(m){ if(m==null||!isFinite(m))return '—';
+  const v=S.unit==='Mbps'?m:m/8; return v>=100?v.toFixed(0):v>=10?v.toFixed(1):v.toFixed(2); }
+const asM=v=>(v==null||!isFinite(v))?'—':(v>=100?v.toFixed(0):v>=10?v.toFixed(1):v.toFixed(2))+' Mbps';
+const mb=b=>(b/1048576).toFixed(1);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function TO(ms){ const c=new AbortController(); const i=setTimeout(()=>c.abort(),ms); return {signal:c.signal,done:()=>clearTimeout(i)}; }
+function srvT(r){ try{ const m=/cfRequestDuration;\s*dur=([\d.]+)/i.exec(r.headers.get('server-timing')||''); if(m)return parseFloat(m[1]); }catch(e){} return 10; }
+function rtOf(u,fb){ try{ const l=performance.getEntriesByName(u), e=l[l.length-1];
+  if(e&&e.responseStart>0&&e.requestStart>0) return e.responseStart-e.requestStart; }catch(e){} return fb; }
+function entOf(u){ try{ const l=performance.getEntriesByName(u); return l[l.length-1]||null; }catch(e){ return null; } }
+function nice(m){ for(const s of [1,2,5,10,20,25,50,100,200,250,500,1000,2500,5000]) if(m/4<=s) return s*4; return Math.ceil(m/4)*4; }
+
+/* ═══════════════ DIAL ═══════════════
+   Ookla-style piecewise scale (marks evenly spaced, auto-ranging),
+   spring-damped needle, and ticks that light up as the needle passes them.
+   ══════════════════════════════════════ */
+const CX=200,CY=200,A0=-135,A1=135,R_ARC=124,RT0=137,RT1m=147,RT1M=155,RLB=173,DIV=10;
+const RANGES={
+  dl:[[0,1,2,3,4,5,7,10],[0,1,5,10,20,30,50,75,100],[0,10,25,50,100,250,500,750,1000]],
+  ul:[[0,1,2,3,4,5,7,10],[0,1,5,10,20,30,50,75,100],[0,10,25,50,100,250,500,750,1000]],
+  pg:[[0,5,10,20,30,50,75,100],[0,10,25,50,100,200,350,500,800]]
+};
+const GC={dl:'#FFB020',ul:'#2FD8EE',pg:'#43E39B'}, GRAD={dl:'ga',ul:'gu',pg:'gp'};
+const ICO_DL='<path d="M12 4v13m0 0 5-5m-5 5-5-5"/>',
+      ICO_UL='<path d="M12 20V7m0 0 5 5m-5-5-5 5"/>',
+      ICO_PG='<path d="M3 12h4l3-8 4 16 3-8h4"/>';
+let rIdx=0, curView=null, marks=RANGES.dl[1], TK=[], LB=[], ALEN=0;
+let nPos=0,nVel=0,nTgt=0,dShow=0,dTgt=0;
+
+function pol(r,d){ const a=(d-90)*Math.PI/180; return {x:CX+r*Math.cos(a),y:CY+r*Math.sin(a)}; }
+function arcD(r,d0,d1){ const p=pol(r,d0),q=pol(r,d1);
+  return `M ${p.x.toFixed(2)} ${p.y.toFixed(2)} A ${r} ${r} 0 ${(d1-d0)>180?1:0} 1 ${q.x.toFixed(2)} ${q.y.toFixed(2)}`; }
+function fr(v,m){
+  v=clamp(v||0,m[0],m[m.length-1]);
+  for(let i=0;i<m.length-1;i++) if(v<=m[i+1]) return (i+(v-m[i])/(m[i+1]-m[i]))/(m.length-1);
+  return 1;
+}
+const frac=v=>fr(v,marks);
+function pickRange(v){
+  const R=RANGES[S.view];
+  let want=rIdx;
+  for(let i=0;i<R.length;i++){ if(v<=R[i][R[i].length-1]*0.97){ want=i; break; } want=R.length-1; }
+  if(want>rIdx){ rIdx=want; paintScale(); }
+}
+function resetScale(){ rIdx=0; nPos=nVel=nTgt=dShow=dTgt=0; S.peak=0; $('#peak').innerHTML=''; paintScale(); }
+
+function buildDial(){
+  const d=arcD(R_ARC,A0,A1);
+  $('#trk').setAttribute('d',d);
+  const a=$('#arc'); a.setAttribute('d',d);
+  ALEN=a.getTotalLength(); a.style.strokeDasharray=ALEN; a.style.strokeDashoffset=ALEN;
+  paintScale();
+}
+function paintScale(){
+  if(curView!==S.view){ curView=S.view; rIdx=0; }
+  const R=RANGES[S.view]; rIdx=clamp(rIdx,0,R.length-1); marks=R[rIdx];
+  const col=GC[S.view];
+  $('.dialbox').style.setProperty('--gc',col);
+  $('#arc').setAttribute('stroke','url(#'+GRAD[S.view]+')');
+  $('#hub').setAttribute('fill',col);
+  $('#rdIco').innerHTML = S.view==='ul'?ICO_UL : S.view==='pg'?ICO_PG : ICO_DL;
+  $('#un').textContent = S.view==='pg'?'ms':S.unit;
+  const seg=marks.length-1, n=seg*DIV;
+  let t='',l='';
+  for(let i=0;i<=n;i++){
+    const f=i/n, dg=A0+(A1-A0)*f, M=(i%DIV===0);
+    const p=pol(RT0,dg), q=pol(M?RT1M:RT1m,dg);
+    t+=`<line class="tk${M?' M':''}" data-f="${f.toFixed(4)}" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${q.x.toFixed(1)}" y2="${q.y.toFixed(1)}"/>`;
+  }
+  marks.forEach((m,i)=>{ const f=i/seg, p=pol(RLB,A0+(A1-A0)*f);
+    l+=`<text class="lb" data-f="${f.toFixed(4)}" x="${p.x.toFixed(1)}" y="${(p.y+4.4).toFixed(1)}">${m}</text>`; });
+  $('#ticks').innerHTML=t; $('#labels').innerHTML=l;
+  TK=Array.from($('#ticks').children).map(e=>({e,f:parseFloat(e.getAttribute('data-f'))}));
+  LB=Array.from($('#labels').children).map(e=>({e,f:parseFloat(e.getAttribute('data-f'))}));
+  paintNeedle(true);
+}
+function paintNeedle(force){
+  const f=clamp(nPos,0,1), dg=A0+(A1-A0)*f;
+  $('#arc').style.strokeDashoffset=ALEN*(1-f);
+  $('#needle').style.transform=`rotate(${dg.toFixed(2)}deg)`;
+  for(const t of TK){ const on=t.f<=f+0.001; if(on!==t.o){ t.o=on; t.e.classList.toggle('on',on); } }
+  for(const t of LB){ const on=t.f<=f+0.02; if(on!==t.o){ t.o=on; t.e.classList.toggle('on',on); } }
+  const txt = S.view==='pg' ? (dTgt>0?fmt(dShow,0):'0') : (dTgt>0?sp(dShow):'0');
+  $('#big').textContent = dTgt===null?'—':txt;
+}
+function dialStep(dt){
+  const k=170,c=24;                                   // spring + damping (slightly under-damped)
+  nVel += ((nTgt-nPos)*k - nVel*c)*dt;
+  nPos += nVel*dt;
+  if(nPos<0){nPos=0;nVel=0;} if(nPos>1){nPos=1;nVel*=-.3;}
+  dShow += (dTgt-dShow)*Math.min(1,dt*9);
+  paintNeedle();
+}
+function setDial(v,lat){
+  if(v==null){ dTgt=null; nTgt=0; if(RM){nPos=0;paintNeedle();} return; }
+  pickRange(v);
+  nTgt=frac(v); dTgt=v;
+  if(RM){ nPos=nTgt; dShow=v; paintNeedle(); }
+  if(S.view!=='pg' && v>S.peak){
+    S.peak=v; $('#sPk').textContent=sp(v);
+    const p=pol(R_ARC,A0+(A1-A0)*frac(v));
+    $('#peak').innerHTML=`<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4.4" fill="none" stroke="#FFF0C4" stroke-width="2"/>`;
+  }
+}
+function setBig(v){ $('#un').textContent = S.view==='pg'?'ms':S.unit; if(v!=null){ dTgt=v; } }
+function setWave(){ paintNeedle(); }
+const ph=t=>{$('#ph').textContent=t;};
+const prog=p=>{$('#prog').style.insetInlineEnd=(100-clamp(p,0,100))+'%';};
+
+/* ═══════════════ ROUTE MAP ═══════════════ */
+const HOPS=[{k:'جهازك'},{k:'DNS'},{k:'TCP+TLS'},{k:'السيرفر'}];
+let rDots=[];
+function buildRoute(){
+  const W=520,H=96, y=44, xs=HOPS.map((_,i)=>52+i*((W-104)/(HOPS.length-1)));
+  let s=`<line x1="${xs[0]}" y1="${y}" x2="${xs[3]}" y2="${y}" stroke="#182541" stroke-width="2"/>`;
+  s+=`<line id="rLive" x1="${xs[0]}" y1="${y}" x2="${xs[0]}" y2="${y}" stroke="#FFB020" stroke-width="2" opacity=".55"/>`;
+  HOPS.forEach((h,i)=>{
+    s+=`<circle cx="${xs[i]}" cy="${y}" r="7" fill="#0A1020" stroke="#26375A" stroke-width="2" id="rn${i}"/>`;
+    s+=`<circle cx="${xs[i]}" cy="${y}" r="2.6" fill="#3A4A69" id="rc${i}"/>`;
+    s+=`<text class="hop" x="${xs[i]}" y="${y+24}">${h.k}</text>`;
+    s+=`<text class="hopv" x="${xs[i]}" y="${y-15}" id="rv${i}">—</text>`;
+  });
+  for(let i=0;i<5;i++) s+=`<circle class="rd" r="2.4" fill="#FFB020" opacity="0" id="rd${i}"/>`;
+  $('#routeSvg').innerHTML=s;
+  rDots=[0,1,2,3,4].map(i=>({el:$('#rd'+i), p:Math.random()}));
+  window.__rx={x0:xs[0],x1:xs[3],y};
+}
+function routeTick(dt){
+  if(RM) return;
+  const r=window.__rx; if(!r) return;
+  const act=window.__act||0, sp2=(.12+act*.9)*dt;
+  const col=window.__hue==='cy'?'#2FD8EE':'#FFB020';
+  rDots.forEach(d=>{
+    d.p+=sp2; if(d.p>1) d.p-=1;
+    const rev = window.__hue==='cy';
+    const x = rev ? r.x1-(r.x1-r.x0)*d.p : r.x0+(r.x1-r.x0)*d.p;
+    d.el.setAttribute('cx',x.toFixed(1)); d.el.setAttribute('cy',r.y);
+    d.el.setAttribute('fill',col);
+    d.el.setAttribute('opacity', (act>0.02? .95:0).toFixed(2));
+  });
+}
+function setRoute(){
+  const w=S.res.wf, R=S.res;
+  const v=[0, w?w.dns:null, w?(w.tcp+w.tls):null, R.idle];
+  v.forEach((x,i)=>{ const e=$('#rv'+i); if(!e) return;
+    e.textContent = i===0?'0' : (x==null?'—':Math.round(x)+'ms');
+    const c=$('#rc'+i), n=$('#rn'+i);
+    const bad = x!=null && (i===1? x>120 : i===2? x>350 : i===3? x>120 : false);
+    const col = i===0?'#43E39B' : x==null?'#3A4A69' : bad?'#FF6B5B':'#43E39B';
+    c.setAttribute('fill',col); n.setAttribute('stroke',x==null?'#26375A':col);
+  });
+}
+
+/* ═══════════════ ENDPOINTS (with fallback) ═══════════════ */
+/* Fastly-fronted files. Cloudflare has PoPs inside Iraq, so speed.cloudflare.com
+   measures the local edge. Fastly does not, so these ride real international transit. */
+const INTL_POOL=[
+  '/@tensorflow/tfjs@3.21.0/dist/tf.min.js',
+  '/pdfjs-dist@2.16.105/build/pdf.worker.min.js',
+  '/echarts@5.4.3/dist/echarts.min.js',
+  '/three@0.128.0/build/three.min.js',
+  '/monaco-editor@0.34.1/min/vs/editor/editor.main.js'
+];
+/* Four separate hostnames on three different CDNs. The browser pools by origin,
+   so each hostname is its own TCP/QUIC connection with its own congestion window. */
+const INTL_ORIG=[
+  {h:'https://cdn.jsdelivr.net',    u:x=>'https://cdn.jsdelivr.net/npm'+x},
+  {h:'https://fastly.jsdelivr.net', u:x=>'https://fastly.jsdelivr.net/npm'+x},
+  {h:'https://gcore.jsdelivr.net',  u:x=>'https://gcore.jsdelivr.net/npm'+x},
+  {h:'https://unpkg.com',           u:x=>'https://unpkg.com'+x}
+];
+let intlOrig=INTL_ORIG.slice(), iH=0, iP=0;
+const INTL={id:'intl',name:'مسار دولي',sized:false,chunk:900000,
+  tiny:()=>intlOrig[0].u('/tiny-invariant@1.3.3/package.json')+'?r='+rnd(),
+  down:()=>intlOrig[(iH++)%intlOrig.length].u(INTL_POOL[(iP++)%INTL_POOL.length]),
+  up:null};
+function originUrl(i,j){ const o=intlOrig[i%intlOrig.length]; return o.u(INTL_POOL[j%INTL_POOL.length]); }
+async function liveOrigins(){
+  const out=[];
+  await Promise.all(INTL_ORIG.map(async o=>{
+    const t=TO(5000);
+    try{ const r=await fetch(o.u('/tiny-invariant@1.3.3/package.json')+'?r='+rnd(),
+      {cache:'no-store',signal:t.signal}); await r.arrayBuffer(); t.done(); if(r.ok) out.push(o); }
+    catch(e){ t.done(); }
+  }));
+  return out.length?out:[INTL_ORIG[0]];
+}
+/* Any LibreSpeed backend works as a full external server (garbage.php + empty.php,
+   which return Access-Control-Allow-Origin:* when cors=true is passed). */
+function libre(base,name){
+  base=base.replace(/\/+$/,'')+'/';
+  return {id:'ls',name:name||'سيرفر مخصص',sized:true,libre:true,
+    tiny:()=>base+'backend/empty.php?cors=true&r='+rnd(),
+    down:b=>base+'backend/garbage.php?cors=true&ckSize='+clamp(Math.round(b/1e6),4,1024)+'&r='+rnd(),
+    up:base+'backend/empty.php?cors=true'};
+}
+const SRC=[
+  {id:'cf',name:'Cloudflare',sized:true,
+   tiny:()=>`https://speed.cloudflare.com/__down?bytes=0&r=${rnd()}`,
+   down:b=>`https://speed.cloudflare.com/__down?bytes=${b}&r=${rnd()}`,
+   up:'https://speed.cloudflare.com/__up'},
+  {id:'jsd',name:'jsDelivr',sized:false,chunk:1150000,
+   tiny:()=>`https://cdn.jsdelivr.net/npm/tiny-invariant@1.3.3/package.json?r=${rnd()}`,
+   down:()=>`https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js?r=${rnd()}`,
+   up:null}
+];
+async function health(){
+  if(S.pin&&S.ep) return true;
+  const led=$('#ledEnd'), txt=$('#endTxt');
+  for(const s of SRC){
+    const t=TO(7000);
+    try{
+      const r=await fetch(s.tiny(),{cache:'no-store',signal:t.signal}); await r.arrayBuffer(); t.done();
+      if(!r.ok) continue;
+      S.ep=s; S.upOk=!!s.up;
+      led.className='led ok'; $('#pEnd').classList.add('act');
+      txt.textContent = s.name + (s.up?'':' · تحميل فقط');
+      return true;
+    }catch(e){ t.done(); }
+  }
+  led.className='led bad'; txt.textContent='الاتصال محجوب';
+  $('#err').innerHTML=`<div class="warn">ما نكدر نوصل لسيرفرات القياس. غالباً VPN أو مانع إعلانات يحجب الطلبات.<br>
+   ارفع الملف على Netlify أو افتحه بالمتصفّح مباشرةً وسيشتغل.</div>`;
+  return false;
+}
+
+/* Cloudflare edge codes that matter for this region. */
+const COLO={BGW:['بغداد','IQ'],EBL:['أربيل','IQ'],BSR:['البصرة','IQ'],ISU:['السليمانية','IQ'],NJF:['النجف','IQ'],
+  AMM:['عمّان','JO'],KWI:['الكويت','KW'],DXB:['دبي','AE'],AUH:['أبوظبي','AE'],DOH:['الدوحة','QA'],
+  BAH:['المنامة','BH'],RUH:['الرياض','SA'],JED:['جدة','SA'],MCT:['مسقط','OM'],IST:['إسطنبول','TR'],
+  BEY:['بيروت','LB'],TLV:['تل أبيب','IL'],EVN:['يريفان','AM'],TBS:['تبليسي','GE'],BAK:['باكو','AZ'],
+  FRA:['فرانكفورت','DE'],AMS:['أمستردام','NL'],LHR:['لندن','GB'],CDG:['باريس','FR'],MRS:['مرسيليا','FR'],
+  MXP:['ميلانو','IT'],VIE:['فيينا','AT'],WAW:['وارسو','PL'],OTP:['بوخارست','RO'],SOF:['صوفيا','BG'],
+  ATH:['أثينا','GR'],BUD:['بودابست','HU'],KIV:['كيشيناو','MD'],CAI:['القاهرة','EG'],SIN:['سنغافورة','SG']};
+const NEAR=new Set(['JO','KW','AE','QA','BH','SA','OM','TR','LB','IL','AM','GE','AZ']);
+function serverClass(colo){
+  const c=COLO[(colo||'').toUpperCase()];
+  if(!c) return {k:'?',t:'غير معروف',c:'var(--dm)'};
+  if(c[1]==='IQ') return {k:'محلي',t:c[0]+' · داخل العراق',c:'var(--co)'};
+  if(NEAR.has(c[1])) return {k:'إقليمي',t:c[0],c:'var(--am)'};
+  return {k:'دولي',t:c[0],c:'var(--mn)'};
+}
+
+/* ═══════════════ PRIMITIVES ═══════════════ */
+let BLK=null;
+const blk=()=>{ if(!BLK){ BLK=new Uint8Array(65536);
+  try{crypto.getRandomValues(BLK);}catch(e){for(let i=0;i<BLK.length;i++)BLK[i]=(i*2654435761)&255;} } return BLK; };
+function pay(n){ const b=blk(),o=new Uint8Array(n); for(let i=0;i<n;i+=b.length)o.set(b.subarray(0,Math.min(b.length,n-i)),i); return o; }
+
+async function ping(){
+  const u=S.ep.tiny(), t=TO(9000), t0=performance.now();
+  const r=await fetch(u,{cache:'no-store',signal:t.signal});
+  await r.arrayBuffer(); t.done();
+  return Math.max(.4, rtOf(u,performance.now()-t0) - (S.ep.id==='cf'?srvT(r):3));
+}
+let CHUNKS=null;                 // when non-null, record every chunk's arrival time
+async function pull(url){
+  const r=await fetch(url,{cache:'no-store',signal:S.abort?S.abort.signal:undefined});
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  let got=0;
+  if(r.body&&r.body.getReader){ const rd=r.body.getReader();
+    for(;;){ const {done,value}=await rd.read(); if(done)break;
+      if(CHUNKS&&value.length>=8192&&CHUNKS.length<4000) CHUNKS.push({t:performance.now(),n:value.length});
+      got+=value.length; S.acc+=value.length; S.bytes+=value.length; } }
+  else { const b=await r.arrayBuffer(); got=b.byteLength; S.acc+=got; S.bytes+=got; }
+  try{                                     // wire vs decoded, per leg
+    const e=entOf(url), c=S.cf[S.tag];
+    if(e&&c){
+      const wire = e.transferSize>0 ? e.transferSize : e.encodedBodySize;
+      if(wire>0 && e.decodedBodySize>0){ c.e+=wire; c.d+=e.decodedBodySize; c.n++; }
+    }
+  }catch(_){}
+  return {got,res:r,url};
+}
+async function downOnce(bytes){
+  const t0=performance.now(); let got=0,st=10,u0=null;
+  if(S.ep.sized){ const o=await pull(S.ep.down(bytes)); got=o.got; st=srvT(o.res); u0=o.url; }
+  else { while(got<bytes && S.running!==false){ const o=await pull(S.ep.down()); got+=o.got; u0=o.url; if(o.got===0)break; } st=3; }
+  const ms=Math.max(1,(performance.now()-t0)-st);
+  return {bytes:got,ms,mbps:got*8/(ms/1000)/1e6,url:u0};
+}
+function upOnce(bytes){
+  return new Promise((res,rej)=>{
+    if(!S.ep.up) return rej(new Error('no upload endpoint'));
+    const x=new XMLHttpRequest(); S.xhrs.push(x);
+    x.open('POST',S.ep.up+'?r='+rnd(),true); x.timeout=45000;
+    let last=0; const t0=performance.now();
+    x.upload.onprogress=e=>{ const d=e.loaded-last; last=e.loaded; if(d>0){S.acc+=d;S.bytes+=d;} };
+    x.onload=()=>{ const ms=Math.max(1,performance.now()-t0); res({bytes,ms,mbps:bytes*8/(ms/1000)/1e6}); };
+    x.onerror=()=>rej(new Error('upload blocked')); x.onabort=()=>rej(new Error('aborted'));
+    x.ontimeout=()=>rej(new Error('timeout'));
+    try{ x.send(pay(bytes)); }catch(e){ rej(e); }
+  });
+}
+
+/* ═══════════════ SAMPLER ═══════════════ */
+let tn=0, lastFrame=0;
+function tickSample(){
+  const now=performance.now(), dt=(now-S.tick)/1000;
+  if(dt<0.04) return;                  // timer coalescing: carry the bytes to the next tick
+  S.tick=now;
+  const m=(S.acc*8)/dt/1e6;
+  if(m>12000){ S.acc=0; return; }      // no browser reaches this; it is a timing artefact
+  S.acc=0;
+  const t=(now-S.t0)/1000;
+  if(S.dir==='dl') S.dl.push({t,v:m,d:dt}); else if(S.dir==='ul') S.ul.push({t,v:m,d:dt});
+  S.disp+=(m-S.disp)*.42;
+  window.__act=clamp(Math.log10(1+S.disp)/Math.log10(1+150),0,1);
+  const lastLat=S.lat.length?S.lat[S.lat.length-1].v:null;
+  if(S.view!=='pg'){ setDial(S.disp,lastLat); setBig(S.disp); }
+  else if(lastLat!=null){ setDial(lastLat,lastLat); setBig(lastLat); }
+  setWave();
+  $('#sData').textContent=mb(S.bytes); $('#sTime').textContent=t.toFixed(1);
+  if((++tn%2)===0){ drawTrace(); drawSparks(); }
+}
+function startSmp(){ S.tick=performance.now(); S.smp=setInterval(tickSample,100); }
+function stopSmp(){ if(S.smp){clearInterval(S.smp); S.smp=null;} }
+
+async function pingLoop(arr,stop){
+  while(!stop.done && S.running){
+    try{ const r=await ping(); if(nn(r)){ arr.push(r); S.lat.push({t:(performance.now()-S.t0)/1000,v:r}); } }
+    catch(e){ S.fails++; }
+    await sleep(400);
+  }
+}
+
+/* ═══════════════ PHASES ═══════════════ */
+async function warm(){
+  ph('تهيئة');
+  const o=await downOnce(120000);
+  const e=o.url?entOf(o.url):null;
+  if(e) S.res.wf={dns:Math.max(0,e.domainLookupEnd-e.domainLookupStart),
+    tcp:Math.max(0,(e.secureConnectionStart>0?e.secureConnectionStart:e.connectEnd)-e.connectStart),
+    tls:e.secureConnectionStart>0?Math.max(0,e.connectEnd-e.secureConnectionStart):0,
+    ttfb:Math.max(0,e.responseStart-e.requestStart),
+    dl:Math.max(0,e.responseEnd-e.responseStart), proto:e.nextHopProtocol||''};
+}
+async function phIdle(c){
+  ph('زمن الاستجابة'); S.view='pg'; syncTabs(); paintScale();
+  for(let i=0;i<c.pings&&S.running;i++){
+    try{ const r=await ping(); if(nn(r)){ S.idle.push(r); S.lat.push({t:(performance.now()-S.t0)/1000,v:r});
+      setDial(r,r); setBig(r); BG.ping(); } }catch(e){ S.fails++; }
+    $('#sub').textContent='p50 '+fmt(pct(S.idle,.5),0)+' · n='+S.idle.length;
+    prog(4+(i/c.pings)*9); drawTrace();
+    await sleep(55);
+  }
+  S.res.idle=pct(S.idle,.5);
+}
+async function phDown(c){
+  ph('التحميل'); S.tag='dl'; S.view='dl'; syncTabs(); paintScale(); S.peak=0;
+  window.__hue='am'; S.dir='dl'; S.disp=0;
+  S.dlPhase={start:(performance.now()-S.t0)/1000,end:null};
+  const stop={done:false}, lp=pingLoop(S.loadDl,stop), p0=performance.now();
+  for(let i=0;i<c.dl.length&&S.running;i++){
+    const B=c.dl[i], n=B<=1e6?Math.min(2,c.dls):c.dls;
+    S.streams=n; $('#sStr').textContent=n;
+    const t0=performance.now(); let tot=0;
+    await Promise.all(Array.from({length:n},()=>downOnce(B).then(r=>{tot+=r.bytes;}).catch(()=>{S.fails++;})));
+    const ms=performance.now()-t0;
+    if(tot>0&&ms>0) S.perSize.push({bytes:B,streams:n,tot,ms,mbps:tot*8/(ms/1000)/1e6});
+    const el=performance.now()-p0;
+    $('#sub').textContent=(B>=1e6?(B/1e6)+'MB':(B/1e3)+'KB')+' ×'+n;
+    prog(13+clamp(el/c.dlb,0,1)*36);
+    if(el>c.dlb) break;
+    if(ms>=2000&&el>=4000) break;
+  }
+  S.dlPhase.end=(performance.now()-S.t0)/1000;
+  stop.done=true; await lp;
+  S.dir=null; S.streams=0; $('#sStr').textContent='0';
+}
+async function phSingle(c){
+  if(!S.running) return;
+  ph('اتصال واحد'); $('#sub').textContent='single stream';
+  const est=S.res.dq||20, B=Math.round(clamp(est*1e6/8*3,1e6,c.single));
+  S.tag='single'; S.dir='dl'; S.res.sMark=(performance.now()-S.t0)/1000; S.streams=1; $('#sStr').textContent='1';
+  CHUNKS=[];
+  try{ const r=await downOnce(B); S.res.single=r.mbps; }catch(e){ S.fails++; }
+  S.res.chunks=CHUNKS; CHUNKS=null;
+  S.dir=null; S.streams=0; $('#sStr').textContent='0'; prog(52);
+}
+async function phUp(c){
+  if(!S.upOk){ prog(84); return; }
+  ph('الرفع'); S.view='ul'; syncTabs(); paintScale(); S.peak=0;
+  window.__hue='cy'; S.dir='ul'; S.disp=0;
+  S.ulPhase={start:(performance.now()-S.t0)/1000,end:null};
+  const stop={done:false}, lp=pingLoop(S.loadUl,stop), p0=performance.now();
+  for(let i=0;i<c.ul.length&&S.running;i++){
+    const B=c.ul[i], n=B<=1e6?Math.min(2,c.uls):c.uls;
+    S.streams=n; $('#sStr').textContent=n;
+    const t0=performance.now(); let ok=0;
+    await Promise.all(Array.from({length:n},()=>upOnce(B).then(()=>{ok++;}).catch(()=>{S.fails++;})));
+    const ms=performance.now()-t0;
+    if(ok>0&&ms>0) S.upPerSize.push({bytes:B,streams:n,mbps:B*ok*8/(ms/1000)/1e6});
+    const el=performance.now()-p0;
+    $('#sub').textContent=(B>=1e6?(B/1e6)+'MB':(B/1e3)+'KB')+' ×'+n;
+    prog(54+clamp(el/c.ulb,0,1)*30);
+    if(el>c.ulb) break;
+    if(ms>=2000&&el>=4000) break;
+  }
+  S.ulPhase.end=(performance.now()-S.t0)/1000;
+  stop.done=true; await lp;
+  S.dir=null; S.streams=0; $('#sStr').textContent='0';
+  window.__hue='am';
+}
+/* ── CONCURRENCY SWEEP ───────────────────────────────────────────────────
+   Ookla's advantage is many independent TCP sockets. Instead of imitating it,
+   measure the thing it hides: how throughput responds to connection count.
+   Run 1, 2, 4, 8 connections spread over separate origins. If the curve is flat,
+   one connection already fills the line and the single number is the truth.
+   If it climbs, the path is loss/RTT limited and the plateau is the real capacity.
+   ──────────────────────────────────────────────────────────────────────── */
+async function burst(k,ms){
+  const stop={v:false}; let seed=0;
+  const jobs=Array.from({length:k},(_,i)=>(async()=>{
+    let j=i;
+    while(!stop.v&&S.running){
+      try{ await pull(originUrl(i,j++)); }
+      catch(e){ S.fails++; await sleep(120); }
+    }
+  })());
+  await sleep(700);                                  // let the windows open
+  const mark=S.bytes, t0=performance.now();
+  await sleep(ms);
+  const got=S.bytes-mark, secs=(performance.now()-t0)/1000;
+  stop.v=true;
+  try{ await Promise.all(jobs); }catch(e){}
+  return {k, mbps: secs>0?got*8/secs/1e6:null, bytes:got, secs};
+}
+async function phIntl(){
+  if(!S.running) return;
+  ph('فحص المسار الدولي');
+  intlOrig=await liveOrigins(); S.res.conns=intlOrig.length;
+  const save=S.ep; S.ep=INTL; S.tag='intl'; S.dir='dl'; S.disp=0;
+  S.res.iMark=(performance.now()-S.t0)/1000;
+  const levels = S.mode==='q'?[1,4] : S.mode==='d'?[1,2,4,8,12] : [1,2,4,8];
+  const dur    = S.mode==='q'?1500  : S.mode==='d'?2200          : 1800;
+  S.sweep=[];
+  for(let i=0;i<levels.length&&S.running;i++){
+    const k=levels[i];
+    S.streams=k; $('#sStr').textContent=k; $('#sub').textContent=k+' اتصال';
+    try{ const r=await burst(k,dur); if(nn(r.mbps)) S.sweep.push(r); }catch(e){}
+    prog(70+((i+1)/levels.length)*16);
+    await sleep(180);
+  }
+  S.ep=save; S.tag='dl'; S.dir=null; S.streams=0; $('#sStr').textContent='0';
+  const e=(performance.now()-S.t0)/1000;
+  S.res.intlWin={start:S.res.iMark,end:e};
+  if(S.sweep.length){
+    S.res.intl1 = (S.sweep.find(x=>x.k===1)||{}).mbps || null;
+    const best  = S.sweep.reduce((a,x)=>x.mbps>a.mbps?x:a, S.sweep[0]);
+    S.res.intl  = best.mbps; S.res.intlK = best.k;
+    const knee  = S.sweep.find(x=>x.mbps>=best.mbps*0.95);
+    S.res.knee  = knee?knee.k:best.k;
+  }
+  try{ S.res.intlPing=await bestOf(intlOrig[0].u('/tiny-invariant@1.3.3/package.json'),4); }catch(e){}
+}
+async function bestOf(u,n){ let b=null;
+  for(let i=0;i<n;i++){ const r=await probe(u+(u.includes('?')?'&':'?')+'r='+rnd());
+    if(r!=null&&(b==null||r<b)) b=r; await sleep(30); } return b; }
+async function probe(u,h){
+  const t=TO(3500), t0=performance.now();
+  try{ const r=await fetch(u,{cache:'no-store',signal:t.signal,headers:h||undefined});
+    await r.arrayBuffer(); t.done(); return rtOf(u,performance.now()-t0); }
+  catch(e){ t.done(); return null; }
+}
+async function best(u,n,h){ let b=null;
+  for(let i=0;i<n;i++){ const r=await probe(u+(u.includes('?')?'&':'?')+'r='+rnd(),h);
+    if(r!=null&&(b==null||r<b)) b=r; await sleep(35); } return b; }
+async function phCtx(){
+  const cap=(pr,ms)=>Promise.race([pr,new Promise(r=>setTimeout(()=>r(null),ms))]);
+  const j=async(u,ms)=>{ const t=TO(ms);
+    try{ const r=await fetch(u,{cache:'no-store',signal:t.signal}); const x=await r.json(); t.done(); return x; }
+    catch(e){ t.done(); return null; } };
+  prog(95);
+  const got = await cap(Promise.all([
+    j('https://speed.cloudflare.com/meta',4500),
+    j('https://ipwho.is/',4500),
+    j('https://api6.ipify.org?format=json',4000)
+  ]), 6000) || [null,null,null];
+  const [meta,who,v6]=got;
+  if(meta) S.res.meta=meta;
+  if(who){ S.res.who=who;
+    const isp=(who.connection&&(who.connection.isp||who.connection.org))||'';
+    if(isp) $('#pIsp').textContent=isp; }
+  S.res.ipv6 = (v6&&v6.ip)?v6.ip:null;
+  prog(97);
+  const TG=[
+    {n:'سيرفر Cloudflare',u:'https://speed.cloudflare.com/__down?bytes=0'},
+    {n:'jsDelivr CDN',u:'https://cdn.jsdelivr.net/npm/tiny-invariant@1.3.3/package.json'},
+    {n:'GitHub API',u:'https://api.github.com/zen'},
+    {n:'DNS · 1.1.1.1',u:'https://cloudflare-dns.com/dns-query?name=example.com&type=A',h:{'Accept':'application/dns-json'}},
+    {n:'DNS · 8.8.8.8',u:'https://dns.google/resolve?name=example.com&type=A'}
+  ];
+  const rs = await cap(Promise.all(TG.map(async t=>({name:t.n, ms:await best(t.u,2,t.h)}))), 7000);
+  S.reach = rs || [];
+}
+
+/* ═══════════════ COMPUTE ═══════════════ */
+function series(list,p,skip){ if(!p) return [];
+  const e=p.end==null?Infinity:p.end;
+  return list.filter(x=>x.t>=p.start+(skip||0)&&x.t<=e).map(x=>x.v); }
+function grade(i){
+  if(i==null) return {g:'—',c:'gN',t:'ما انقاس'};
+  if(i<5)   return {g:'A+',c:'gA',t:'الشبكة ما تتأثر أبداً وقت الضغط'};
+  if(i<30)  return {g:'A', c:'gA',t:'ثابتة، ما راح تحس بفرق وقت التحميل'};
+  if(i<60)  return {g:'B', c:'gB',t:'تأخير بسيط لما تنشغل الشبكة'};
+  if(i<200) return {g:'C', c:'gC',t:'المكالمات والألعاب راح تتقطّع وقت التنزيل'};
+  if(i<400) return {g:'D', c:'gD',t:'تتأثر بوضوح، فعّل SQM أو QoS بالراوتر'};
+  return            {g:'F',c:'gF',t:'انهيار كامل وقت الضغط'};
+}
+/* ── throughput estimators ────────────────────────────────────────────────
+   Headline = total payload bytes / elapsed time across the steady-state window.
+   That is the physical definition of throughput. A high percentile of short
+   windows (what Cloudflare uses, and what Ookla approximates by discarding its
+   slowest 30% of samples) picks the luckiest moments and reads high — which is
+   why other tools, and our own earlier build, over-reported.
+   ─────────────────────────────────────────────────────────────────────── */
+function agg(list,from,to){
+  const w=list.filter(x=>x.t>=from&&x.t<=to&&x.d>0);
+  let B=0,T=0; w.forEach(x=>{ B+=x.v*1e6/8*x.d; T+=x.d; });
+  return {mbps:T>0?B*8/T/1e6:null, bytes:B, secs:T, n:w.length, w};
+}
+function blocks1s(w){                       // non-overlapping 1s blocks → independent samples
+  const out=[]; let b=0,t=0;
+  w.forEach(x=>{ b+=x.v*x.d; t+=x.d; if(t>=1){ out.push(b/t); b=0; t=0; } });
+  return out;
+}
+function activeEnd(list,ph){
+  const w=list.filter(x=>x.t>=ph.start&&x.t<=ph.end);
+  if(!w.length) return ph.end;
+  const med=pct(w.map(x=>x.v),.5)||0;
+  for(let i=w.length-1;i>=0;i--) if(w[i].v>=med*0.25) return w[i].t;
+  return ph.end;
+}
+function rampEnd(list,ph){
+  const w=list.filter(x=>x.t>=ph.start&&x.t<=ph.end);
+  if(w.length<10) return ph.start+.8;
+  const plateau=pct(w.slice(Math.floor(w.length*.4)).map(x=>x.v),.5);
+  if(!plateau) return ph.start+.8;
+  for(const x of w) if(x.v>=plateau*.9) return clamp(x.t,ph.start+.3,ph.start+4);
+  return ph.start+.8;
+}
+function confGrade(secs,nb,rel,dis){
+  if(secs>=5&&nb>=5&&rel<.05&&dis<.08) return {g:'A',t:'عالية',c:'var(--mn)'};
+  if(secs>=3&&nb>=3&&rel<.10&&dis<.15) return {g:'B',t:'جيدة',c:'#A6E05A'};
+  if(secs>=2&&nb>=2)                   return {g:'C',t:'متوسطة، أطِل الفحص',c:'var(--am)'};
+  return {g:'D',t:'ضعيفة، العيّنة قصيرة',c:'var(--co)'};
+}
+/* Packet-train dispersion. Every source of error here is ADDITIVE delay —
+   scheduling, buffering, a busy main thread — so the fastest inter-chunk rates
+   are the least contaminated view of the bottleneck. This estimator does not
+   depend on the congestion window at all, which is exactly the blind spot of a
+   single-connection browser test. */
+function capFit(ch,sc){
+  const g=[], floor=Math.max(0.05,(S.res0||0.1)*3);   // ignore gaps at the clock's floor
+  for(let i=1;i<ch.length;i++){ const dt=ch[i].t-ch[i-1].t; if(dt>=floor) g.push({dt,n:ch[i].n*sc}); }
+  if(g.length<40) return null;
+  const by=new Map();
+  g.forEach(x=>{ if(!by.has(x.n)) by.set(x.n,[]); by.get(x.n).push(x.dt); });
+  // lower envelope: the 5th percentile per chunk size. delay is one-sided, so the
+  // floor of each size class is the pure serialisation time for those bytes.
+  const pts=[...by.entries()].filter(([,v])=>v.length>=10)
+        .map(([n,v])=>[n,pct(v,.05)]).sort((a,b)=>a[0]-b[0]);
+  if(pts.length<3) return null;
+  const sl=[];                                  // Theil-Sen: median of pairwise slopes
+  for(let i=0;i<pts.length;i++) for(let j=i+1;j<pts.length;j++){
+    const dx=pts[j][0]-pts[i][0]; if(dx>0) sl.push((pts[j][1]-pts[i][1])/dx); }
+  if(!sl.length) return null;
+  sl.sort((a,b)=>a-b);
+  const slope=sl[Math.floor(sl.length/2)];
+  if(!(slope>0)) return null;
+  const ovh=pct(pts.map(x=>x[1]-slope*x[0]),.5);
+  return {mbps:0.008/slope, ovh, bins:pts.length, n:g.length};
+}
+function dispersion(ch){
+  if(!ch||ch.length<24) return null;
+  const g=[];
+  for(let i=1;i<ch.length;i++){
+    const dt=ch[i].t-ch[i-1].t;
+    if(dt>=0.3) g.push({dt,n:ch[i].n});
+  }
+  if(g.length<18) return null;
+  // Stalls (a sender waiting out an RTT) are rare and huge; in-burst gaps are many
+  // and similar. Cut anything past 4x the median gap — this adapts to slow links,
+  // where a single 16KB chunk legitimately takes tens of milliseconds.
+  const med=pct(g.map(x=>x.dt),.5), lim=Math.max(20,med*4);
+  const r=g.filter(x=>x.dt<=lim).map(x=>x.n*8/(x.dt/1000)/1e6);
+  if(r.length<18) return null;
+  // pathrate-style MODE, not a high percentile: the bottleneck serialises packets
+  // at one rate, so the densest cluster is that rate. A percentile would just pick
+  // the luckiest gaps and inflate — the exact mistake this whole rewrite removed.
+  const L=r.map(Math.log10).sort((x,y)=>x-y), BW=0.06;   // ~15% wide band
+  let bi=0,bj=0,bn=0;
+  for(let i=0;i<L.length;i++){
+    let j=i; while(j<L.length&&L[j]<=L[i]+BW) j++;
+    if(j-i>bn){ bn=j-i; bi=i; bj=j; }
+  }
+  const band=L.slice(bi,bj);
+  return {cap:Math.pow(10,band[Math.floor(band.length/2)]), typ:pct(r,.5),
+          hi:pct(r,.95), n:r.length, modeN:bn, conc:bn/r.length};
+}
+function compute(){
+  const R=S.res;
+  const cfOf=t=>{
+    const c=S.cf[t];
+    if(!c||c.n<3||!(c.d>0)||!(c.e>0)) return null;
+    const r=c.e/c.d;
+    return (r>=0.05&&r<=0.85)?r:null;      // outside that band: no real compression
+  };
+  R.cfDl=cfOf('dl'); R.cfSingle=cfOf('single'); R.cfIntl=cfOf('intl');
+  const fD=R.cfDl||1, fS=R.cfSingle||1, fI=R.cfIntl||1;
+  R.cfKnown = R.cfDl!=null;
+  const cRaw=(()=>{ const c=S.cf.dl; return (c&&c.n>=3&&c.d>0&&c.e>0)?c.e/c.d:null; })();
+  R.srcCompressed = cRaw!=null && cRaw<0.5;
+  // ── download ──
+  if(S.dlPhase&&S.dlPhase.end!=null){
+    const e0=activeEnd(S.dl,S.dlPhase);
+    const r0=Math.min(rampEnd(S.dl,S.dlPhase),Math.max(S.dlPhase.start,e0-1));
+    const A=agg(S.dl,r0,e0), FULL=agg(S.dl,S.dlPhase.start,e0);
+    const raw=Math.max(A.mbps||0,FULL.mbps||0);
+    R.dl=raw>0?raw*fD:null; R.win={from:r0,to:e0,secs:A.secs,bytes:A.bytes,n:A.n};
+    const bl=blocks1s(A.w).map(x=>x*fD); R.blocks=bl.length;
+    const m=mean(bl), sdv=sd(bl);
+    R.ci=(sdv!=null&&bl.length>2)?1.96*sdv/Math.sqrt(bl.length):null;
+    R.rel=(R.ci!=null&&m)?R.ci/m:null;
+    const ok=S.perSize.filter(x=>x.ms>=1200);
+    if(ok.length){ let B=0,T=0; ok.forEach(x=>{B+=x.tot;T+=x.ms;}); R.dl2=B*8/(T/1000)/1e6*fD; }
+    R.dis=(R.dl&&R.dl2)?Math.abs(R.dl-R.dl2)/Math.max(R.dl,R.dl2):null;
+    const sm=smooth(A.w.map(x=>x.v),5).map(x=>x*fD);
+    R.dlPeak=sm.length?Math.max(...sm):null; R.p90=pct(sm,.9);
+    const cv=(sm.length>3&&mean(sm))?sd(sm)/mean(sm):null;
+    R.stab=cv==null?null:clamp(100*(1-Math.min(1,cv)),0,100);
+    const tail=S.dl.filter(x=>x.t>=Math.max(r0,e0-3)&&x.t<=e0);
+    R.sus=tail.length>=5?(agg(S.dl,Math.max(r0,e0-3),e0).mbps||0)*fD:R.dl;
+    R.conf=confGrade(A.secs||0,R.blocks||0,R.rel==null?1:R.rel,R.dis==null?0:R.dis);
+    R.line=R.dl!=null?R.dl*1.05:null;          // + IP/TCP/TLS framing, estimated
+  } else { R.conf=confGrade(0,0,1,0); }
+  R.use=R.sus!=null?Math.min(R.sus,R.dl!=null?R.dl:R.sus):R.dl;
+  // ── upload ──
+  if(S.ulPhase&&S.ulPhase.end!=null){
+    const ue=activeEnd(S.ul,S.ulPhase);
+    const u0=Math.min(rampEnd(S.ul,S.ulPhase),Math.max(S.ulPhase.start,ue-1));
+    const U=agg(S.ul,u0,ue);
+    R.ul=U.mbps; R.ulSecs=U.secs;   // upload bodies are random bytes: nothing to compress
+    const usm=smooth(U.w.map(x=>x.v),5); R.ulPeak=usm.length?Math.max(...usm):null;
+  }
+  R.idle=pct(S.idle,.5); R.p95=pct(S.idle,.95); R.p99=pct(S.idle,.99);
+  R.min=S.idle.length?Math.min(...S.idle):null; R.jit=jit(S.idle);
+  R.spikes=R.idle?S.idle.filter(v=>v>R.idle*2).length:0;
+  R.latDl=pct(S.loadDl,.5); R.latUl=pct(S.loadUl,.5); R.jitDl=jit(S.loadDl);
+  R.incDl=(R.latDl!=null&&R.idle!=null)?Math.max(0,R.latDl-R.idle):null;
+  R.incUl=(R.latUl!=null&&R.idle!=null)?Math.max(0,R.latUl-R.idle):null;
+  R.inc=(R.incDl==null&&R.incUl==null)?null:Math.max(R.incDl||0,R.incUl||0);
+  R.grade=grade(R.inc);
+  if(S.dlPhase&&S.dlPhase.end&&(S.dlPhase.end-S.dlPhase.start)>6){
+    const ma=agg(S.dl,S.dlPhase.start+.5,S.dlPhase.start+3.5).mbps;
+    const mb2=agg(S.dl,S.dlPhase.end-3,S.dlPhase.end).mbps;
+    if(ma&&mb2&&mb2>.2){ R.burst={e:ma,l:mb2,r:ma/mb2}; R.shaped=(ma/mb2)>=1.25; R.slow=(mb2/ma)>=1.2; }
+  }
+  if(R.intl!=null&&R.dl){ R.gap=R.dl/R.intl; R.localBias=R.gap>=1.6; }
+  if(S.sweep&&S.sweep.length&&!R.sweepFixed){
+    S.sweep.forEach(x=>{ if(nn(x.mbps)) x.mbps*=fI; });
+    R.sweepFixed=true;
+    const best=S.sweep.reduce((a,x)=>x.mbps>a.mbps?x:a,S.sweep[0]);
+    R.intl=best.mbps; R.intlK=best.k;
+    R.intl1=(S.sweep.find(x=>x.k===1)||{}).mbps||null;
+    const kn=S.sweep.find(x=>x.mbps>=best.mbps*0.95); R.knee=kn?kn.k:best.k;
+  }
+  // ── three independent views of the same link ──
+  const F=capFit(R.chunks||[],fS);
+  const D=dispersion(R.chunks);
+  if(D){ R.mode=D.cap*fS; R.dispTyp=D.typ*fS; R.dispN=D.n; R.dispConc=D.conc; }
+  if(F){ R.fit=F.mbps; R.fitOvh=F.ovh; R.fitBins=F.bins; }
+  // The regression is unbiased when there is enough chunk-size spread; the mode is
+  // steadier when there is not. Take the regression as the point estimate, and when
+  // the two disagree publish a RANGE instead of pretending to a single figure.
+  if(R.fit!=null||R.mode!=null){
+    R.disp = R.fit!=null && R.fitBins>=3 ? R.fit : R.mode;
+    R.method = R.fit!=null && R.fitBins>=3 ? 'خط انحدار' : 'الأكثر تكراراً';
+    if(R.fit!=null&&R.mode!=null){
+      R.capLo=Math.min(R.fit,R.mode); R.capHi=Math.max(R.fit,R.mode);
+      R.capSpread=R.capHi>0?(R.capHi-R.capLo)/R.capHi:null;
+    }
+    const coarse=(S.res0||0)>0.5;                      // 1ms clock: chunk timing is mush
+    const enough=(R.dispN||0)>=60 && !coarse;
+    if(coarse) R.coarseClock=true;
+    R.dispOk = enough && (R.dl==null || R.disp>=R.dl*0.9);
+    if(!R.dispOk) R.dispWhy=R.coarseClock?'دقة ساعة المتصفّح منخفضة':(!enough?'عيّنات قليلة':'أقل من السرعة المقاسة');
+    if(R.dispOk&&R.capSpread!=null&&R.capSpread>0.25) R.disp=R.capLo;   // disagree → take the low one
+  }
+  R.est=[['السرعة الفعلية',R.dl],['سعة بعدة اتصالات',R.intl],['سعة الخط من التوقيت',R.dispOk?R.disp:null]]
+        .filter(x=>nn(x[1]));
+  if(R.est.length>=2){
+    const v=R.est.map(x=>x[1]), hi=Math.max(...v), lo=Math.min(...v);
+    R.spread=hi>0?(hi-lo)/hi:null;
+    R.agree=R.spread==null?null:(R.spread<.15?'متطابقة':R.spread<.35?'متقاربة':'متباعدة');
+  }
+  // is one connection enough to fill the path?
+  if(R.intl1!=null&&R.intl!=null&&R.intl1>0){
+    R.fill=R.intl/R.intl1;
+    R.winLimited=R.fill>=1.6;
+    const rtt=(R.intlPing!=null?R.intlPing:R.idle);
+    if(nn(rtt)&&nn(R.intl1)) R.cwnd=R.intl1*1e6/8*(rtt/1000);   // implied window, bytes
+  }
+  if(R.single!=null){ R.single*=fS; }
+  if(R.single!=null&&R.dl) R.ratio=R.dl/R.single;
+  const p=[];
+  const dsc=R.use?clamp(Math.log10(Math.max(1,R.use))/Math.log10(200),0,1)*30:0;
+  const usc=R.ul?clamp(Math.log10(Math.max(1,R.ul))/Math.log10(100),0,1)*15:0;
+  const psc=R.idle!=null?clamp(1-(R.idle-15)/185,0,1)*20:0;
+  const jsc=R.jit!=null?clamp(1-(R.jit-2)/40,0,1)*10:0;
+  const bsc=R.inc==null?0:R.inc<5?20:R.inc<30?17:R.inc<60?13:R.inc<200?8:R.inc<400?3:0;
+  const ssc=R.stab!=null?R.stab/100*5:0;
+  p.push({n:'التحميل',v:dsc,m:30,c:'var(--am)'},{n:'الرفع',v:usc,m:15,c:'var(--cy)'},
+         {n:'البِنغ',v:psc,m:20,c:'var(--mn)'},{n:'التذبذب',v:jsc,m:10,c:'var(--vi)'},
+         {n:'تحت الضغط',v:bsc,m:20,c:'var(--co)'},{n:'الثبات',v:ssc,m:5,c:'#A6E05A'});
+  R.parts=p; R.score=Math.round(p.reduce((a,x)=>a+(nn(x.v)?x.v:0),0)); R.when=Date.now();
+  return R;
+}
+
+/* ═══════════════ CHART PRIMITIVES ═══════════════ */
+function fit(svg,h){ const w=Math.max(280,Math.round((svg.parentElement||svg).clientWidth||900));
+  svg.setAttribute('viewBox',`0 0 ${w} ${h}`); svg.style.height=h+'px'; return w; }
+const nrw=()=>innerWidth<640;
+function pth(p,close,y0){ if(!p.length)return '';
+  let d='M '+p[0][0].toFixed(1)+' '+p[0][1].toFixed(1);
+  for(let i=1;i<p.length;i++) d+=' L '+p[i][0].toFixed(1)+' '+p[i][1].toFixed(1);
+  if(close) d+=` L ${p[p.length-1][0].toFixed(1)} ${y0} L ${p[0][0].toFixed(1)} ${y0} Z`;
+  return d; }
+
+function drawTrace(){
+  const s=$('#trace'); const H=nrw()?200:250, W=fit(s,H);
+  const L=nrw()?32:44,Rr=nrw()?32:44,T=18,B=22,w=W-L-Rr,h=H-T-B;
+  const all=[...S.dl,...S.ul];
+  const tm=Math.max(10,...all.map(p=>p.t),...S.lat.map(p=>p.t));
+  const sm=nice(Math.max(5,...all.map(p=>p.v))), lm=nice(Math.max(40,...S.lat.map(p=>p.v)));
+  const X=t=>L+t/tm*w, Y=v=>T+h-clamp(v,0,sm)/sm*h, Yl=v=>T+h-clamp(v,0,lm)/lm*h;
+  let g='';
+  for(let i=0;i<=4;i++){ const y=(T+h-i/4*h).toFixed(1);
+    g+=`<line class="gl" x1="${L}" y1="${y}" x2="${L+w}" y2="${y}"/>`;
+    g+=`<text class="ax" x="${L-5}" y="${(+y+3.5).toFixed(1)}" text-anchor="end">${(sm*i/4).toFixed(sm<8?1:0)}</text>`;
+    g+=`<text class="ax" x="${L+w+5}" y="${(+y+3.5).toFixed(1)}" fill="#8A5F58">${Math.round(lm*i/4)}</text>`; }
+  g+=`<text class="ax" x="${L-5}" y="${T-6}" text-anchor="end" fill="#FFB020">Mbps</text>`;
+  g+=`<text class="ax" x="${L+w+5}" y="${T-6}" fill="#FF6B5B">ms</text>`;
+  const st=tm<=15?3:tm<=45?10:20;
+  for(let t=0;t<=tm;t+=st) g+=`<text class="ax" x="${X(t).toFixed(1)}" y="${H-6}" text-anchor="middle">${t}s</text>`;
+  const dp=S.dl.map(p=>[X(p.t),Y(p.v)]),up=S.ul.map(p=>[X(p.t),Y(p.v)]),lp=S.lat.map(p=>[X(p.t),Yl(p.v)]);
+  let b='';
+  if(dp.length>1) b+=`<path d="${pth(dp,1,T+h)}" fill="url(#tA)"/><path d="${pth(dp)}" fill="none" stroke="#FFB020" stroke-width="1.9" stroke-linejoin="round"/>`;
+  if(up.length>1) b+=`<path d="${pth(up,1,T+h)}" fill="url(#tB)"/><path d="${pth(up)}" fill="none" stroke="#2FD8EE" stroke-width="1.9" stroke-linejoin="round"/>`;
+  if(lp.length>1) b+=`<path d="${pth(lp)}" fill="none" stroke="#FF6B5B" stroke-width="1.2" stroke-opacity=".8"/>`;
+  let mk='';
+  const M=(t,x2,c)=>t==null?'':`<line x1="${X(t).toFixed(1)}" y1="${T}" x2="${X(t).toFixed(1)}" y2="${T+h}" stroke="${c}" stroke-dasharray="3 4" opacity=".5"/><text class="ax" x="${(X(t)+4).toFixed(1)}" y="${T+10}" fill="${c}">${x2}</text>`;
+  if(S.dlPhase) mk+=M(S.dlPhase.start,'تحميل','#FFB020');
+  if(S.res.sMark) mk+=M(S.res.sMark,'واحد','#A78BFA');
+  if(S.ulPhase) mk+=M(S.ulPhase.start,'رفع','#2FD8EE');
+  if(S.res.iMark) mk+=M(S.res.iMark,'دولي','#43E39B');
+  s.innerHTML=`<defs><linearGradient id="tA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB020" stop-opacity=".32"/><stop offset="1" stop-color="#FFB020" stop-opacity="0"/></linearGradient>
+  <linearGradient id="tB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2FD8EE" stop-opacity=".3"/><stop offset="1" stop-color="#2FD8EE" stop-opacity="0"/></linearGradient></defs>${g}${b}${mk}`;
+}
+function spark(id,arr,col,inv){
+  const e=$(id); if(!arr||arr.length<2){ e.innerHTML=''; return; }
+  const a=arr.slice(-60), mx=Math.max(...a), mn=Math.min(...a), r=Math.max(.001,mx-mn);
+  const p=a.map((v,i)=>[i/(a.length-1)*120, inv? 3+ (v-mn)/r*20 : 23-(v-mn)/r*20]);
+  e.innerHTML=`<path d="${pth(p,1,26)}" fill="${col}" opacity=".14"/><path d="${pth(p)}" fill="none" stroke="${col}" stroke-width="1.5" stroke-linejoin="round"/>`;
+}
+function drawSparks(){
+  spark('#skDl',S.dl.map(p=>p.v),'#FFB020');
+  spark('#skUl',S.ul.map(p=>p.v),'#2FD8EE');
+  spark('#skPg',S.lat.map(p=>p.v),'#43E39B',1);
+  const j=[]; for(let i=1;i<S.idle.length;i++) j.push(Math.abs(S.idle[i]-S.idle[i-1]));
+  spark('#skJt',j,'#A78BFA',1);
+}
+function drawLat(){
+  const s=$('#latC'), rows=[['خامل',S.idle,'#43E39B'],['تحت التحميل',S.loadDl,'#FFB020'],['تحت الرفع',S.loadUl,'#2FD8EE']].filter(r=>r[1].length);
+  if(!rows.length){ fit(s,30); s.innerHTML=''; return; }
+  const H=32+rows.length*44, W=fit(s,H), lw=nrw()?74:96, pad=14;
+  const mx=Math.max(...rows.flatMap(r=>r[1]))*1.1||1;
+  const X=v=>lw+ (v/mx)*(W-lw-pad);
+  let g=`<text class="ax" x="${lw}" y="12">0</text><text class="ax" x="${W-pad}" y="12" text-anchor="end">${mx.toFixed(0)} ms</text>`;
+  rows.forEach((r,i)=>{
+    const y=34+i*44, med=pct(r[1],.5), p95=pct(r[1],.95);
+    g+=`<text class="ax" x="${lw-7}" y="${y+4}" text-anchor="end" font-size="11">${r[0]}</text>`;
+    g+=`<line x1="${lw}" y1="${y}" x2="${W-pad}" y2="${y}" stroke="#111C31" stroke-width="7" stroke-linecap="round"/>`;
+    r[1].forEach(v=>{ g+=`<circle cx="${X(v).toFixed(1)}" cy="${y}" r="2.6" fill="${r[2]}" opacity=".45"/>`; });
+    g+=`<line x1="${X(med).toFixed(1)}" y1="${y-11}" x2="${X(med).toFixed(1)}" y2="${y+11}" stroke="${r[2]}" stroke-width="2.4" stroke-linecap="round"/>`;
+    g+=`<text class="ax" x="${X(med).toFixed(1)}" y="${y-15}" text-anchor="middle" fill="#EAF0FB">${med.toFixed(0)}</text>`;
+    if(p95!=null) g+=`<line x1="${X(p95).toFixed(1)}" y1="${y-7}" x2="${X(p95).toFixed(1)}" y2="${y+7}" stroke="${r[2]}" stroke-width="1.4" opacity=".6" stroke-dasharray="2 2"/>`;
+  });
+  s.innerHTML=g;
+}
+function drawShape(){
+  const R=S.res, s=$('#shC');
+  const it=S.perSize.map(x=>({l:x.bytes>=1e6?(x.bytes/1e6)+'MB':(x.bytes/1e3)+'KB',v:x.mbps}));
+  if(R.burst){ it.push({l:'أول 3ث',v:R.burst.e,c:'#A78BFA'},{l:'آخر 3ث',v:R.burst.l,c:'#FF6B5B'}); }
+  if(R.single!=null) it.push({l:'واحد',v:R.single,c:'#2FD8EE'});
+  if(!it.length){ fit(s,30); s.innerHTML=''; return; }
+  const H=nrw()?190:230, W=fit(s,H), B=30,T=16, mx=nice(Math.max(...it.map(i=>i.v))), bw=W/it.length;
+  let g='';
+  for(let i=0;i<=3;i++){ const y=(T+(H-T-B)*(1-i/3)).toFixed(1);
+    g+=`<line class="gl" x1="0" y1="${y}" x2="${W}" y2="${y}"/><text class="ax" x="3" y="${(+y-4).toFixed(1)}">${(mx*i/3).toFixed(0)}</text>`; }
+  it.forEach((o,i)=>{ const bh=(o.v/mx)*(H-T-B), x=i*bw+bw*.2, w=bw*.6, cx=(i*bw+bw/2).toFixed(1);
+    g+=`<rect x="${x.toFixed(1)}" y="${(H-B-bh).toFixed(1)}" width="${w.toFixed(1)}" height="${Math.max(2,bh).toFixed(1)}" rx="5" fill="${o.c||'#FFB020'}" opacity=".88"/>`;
+    g+=`<text class="ax" x="${cx}" y="${(H-B-bh-6).toFixed(1)}" text-anchor="middle" fill="#EAF0FB">${o.v.toFixed(o.v<10?1:0)}</text>`;
+    g+=`<text class="ax" x="${cx}" y="${H-10}" text-anchor="middle">${o.l}</text>`; });
+  s.innerHTML=g;
+}
+function drawSweep(){
+  const s=$('#swC'), a=S.sweep||[];
+  if(a.length<2){ fit(s,30); s.innerHTML=''; return; }
+  const H=nrw()?170:200, W=fit(s,H), L=40,Rp=14,T=22,B=30, w=W-L-Rp, h=H-T-B;
+  const mx=nice(Math.max(...a.map(x=>x.mbps))), best=Math.max(...a.map(x=>x.mbps));
+  const X=i=>L+(a.length===1?w/2:i/(a.length-1)*w), Y=v=>T+h-clamp(v,0,mx)/mx*h;
+  let g='';
+  for(let i=0;i<=3;i++){ const y=(T+h-i/3*h).toFixed(1);
+    g+=`<line class="gl" x1="${L}" y1="${y}" x2="${W-Rp}" y2="${y}"/><text class="ax" x="${L-5}" y="${(+y+3.5).toFixed(1)}" text-anchor="end">${(mx*i/3).toFixed(0)}</text>`; }
+  g+=`<text class="ax" x="${L-5}" y="${T-7}" text-anchor="end" fill="#43E39B">Mbps</text>`;
+  const ptsA=a.map((x,i)=>[X(i),Y(x.mbps)]);
+  g+=`<path d="${pth(ptsA,1,T+h)}" fill="#43E39B" opacity=".13"/>`;
+  g+=`<path d="${pth(ptsA)}" fill="none" stroke="#43E39B" stroke-width="2.4" stroke-linejoin="round"/>`;
+  a.forEach((x,i)=>{
+    const isKnee = x.k===S.res.knee;
+    g+=`<circle cx="${X(i).toFixed(1)}" cy="${Y(x.mbps).toFixed(1)}" r="${isKnee?5.5:3.6}" fill="${isKnee?'#FFF0C4':'#43E39B'}" ${isKnee?'stroke="#43E39B" stroke-width="2"':''}/>`;
+    g+=`<text class="ax" x="${X(i).toFixed(1)}" y="${(Y(x.mbps)-11).toFixed(1)}" text-anchor="middle" fill="#EAF0FB">${sp(x.mbps)}</text>`;
+    g+=`<text class="ax" x="${X(i).toFixed(1)}" y="${H-11}" text-anchor="middle">${x.k}</text>`;
+  });
+  g+=`<text class="ax" x="${(L+w/2).toFixed(1)}" y="${H-1}" text-anchor="middle">عدد الاتصالات المتوازية</text>`;
+  s.innerHTML=g;
+}
+function drawCmp(){
+  const R=S.res, s=$('#cmpC');
+  const rows=[
+    ['السيرفر القريب',R.dl,'#FFB020'],
+    ['المسار الدولي',R.intl,'#43E39B'],
+    ['سعة الخط من التوقيت',R.dispOk?R.disp:null,'#FF5FA2'],
+    ['اتصال واحد',R.single,'#2FD8EE'],
+    ['أعلى ١٠٪ (ما تعرضه المواقع)',R.p90,'#A78BFA']
+  ].filter(r=>nn(r[1]));
+  if(!rows.length){ fit(s,30); s.innerHTML=''; return; }
+  const H=26+rows.length*34, W=fit(s,H), lw=nrw()?96:150, pad=52;
+  const mx=Math.max(...rows.map(r=>r[1]))*1.06||1;
+  let g='';
+  rows.forEach((r,i)=>{
+    const y=20+i*34, w=Math.max(3,(r[1]/mx)*(W-lw-pad));
+    g+=`<text class="ax" x="${lw-7}" y="${y+9}" text-anchor="end" font-size="11">${r[0]}</text>`;
+    g+=`<rect x="${lw}" y="${y}" width="${w.toFixed(1)}" height="18" rx="5" fill="${r[2]}" opacity=".85"/>`;
+    g+=`<text class="ax" x="${(lw+w+6).toFixed(1)}" y="${y+13}" fill="#EAF0FB" font-size="11">${sp(r[1])}</text>`;
+  });
+  s.innerHTML=g;
+}
+function drawWf(){
+  const w=S.res.wf, s=$('#wf');
+  if(!w){ fit(s,34); s.innerHTML='<text class="ax" x="4" y="20">غير متاح</text>'; return; }
+  const sg=[['DNS',w.dns,'#A78BFA'],['TCP',w.tcp,'#2FD8EE'],['TLS',w.tls,'#43E39B'],['انتظار',w.ttfb,'#FFB020'],['نقل',w.dl,'#FF6B5B']];
+  const tot=sg.reduce((a,b)=>a+(b[1]||0),0)||1, cols=nrw()?2:3, rws=Math.ceil(sg.length/cols);
+  const H=62+rws*21, W=fit(s,H);
+  let x=0,g='';
+  sg.forEach(o=>{ const ww=(o[1]||0)/tot*W;
+    if(ww>.4) g+=`<rect x="${x.toFixed(1)}" y="16" width="${ww.toFixed(1)}" height="28" rx="2" fill="${o[2]}" opacity=".9"/>`; x+=ww; });
+  g+=`<text class="ax" x="0" y="11">0</text><text class="ax" x="${W}" y="11" text-anchor="end">${tot.toFixed(0)} ms</text>`;
+  sg.forEach((o,i)=>{ const c=i%cols, r=Math.floor(i/cols), lx=c*(W/cols), y=64+r*21;
+    g+=`<rect x="${lx.toFixed(1)}" y="${y-8}" width="8" height="8" rx="2" fill="${o[2]}"/>`;
+    g+=`<text class="ax" x="${(lx+12).toFixed(1)}" y="${y}">${o[0]} ${(o[1]||0).toFixed(1)}ms</text>`; });
+  s.innerHTML=g;
+}
+function drawHist(){
+  const s=$('#hsC'), h=S.hist;
+  if(h.length<2){ fit(s,34); s.innerHTML='<text class="ax" x="4" y="20">يحتاج فحصين لرسم الاتجاه</text>'; return; }
+  const a=h.slice(-14), H=160, W=fit(s,H), T=16,B=22,L=34,w=W-L-10,hh=H-T-B;
+  const mx=nice(Math.max(1,...a.map(x=>Math.max(x.dl||0,x.ul||0))));
+  const X=i=>L+(a.length===1?w/2:i/(a.length-1)*w), Y=v=>T+hh-clamp(v,0,mx)/mx*hh;
+  let g='';
+  for(let i=0;i<=3;i++){ const y=(T+hh-i/3*hh).toFixed(1);
+    g+=`<line class="gl" x1="${L}" y1="${y}" x2="${W-10}" y2="${y}"/><text class="ax" x="${L-4}" y="${(+y+3.5).toFixed(1)}" text-anchor="end">${(mx*i/3).toFixed(0)}</text>`; }
+  const dp=a.map((x,i)=>[X(i),Y(x.dl||0)]), up=a.map((x,i)=>[X(i),Y(x.ul||0)]);
+  g+=`<path d="${pth(dp)}" fill="none" stroke="#FFB020" stroke-width="2"/><path d="${pth(up)}" fill="none" stroke="#2FD8EE" stroke-width="2"/>`;
+  dp.forEach(p=>g+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3" fill="#FFB020"/>`);
+  up.forEach(p=>g+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3" fill="#2FD8EE"/>`);
+  const ev=Math.max(1,Math.ceil(a.length/5));
+  a.forEach((x,i)=>{ if(i%ev===0) g+=`<text class="ax" x="${X(i).toFixed(1)}" y="${H-6}" text-anchor="middle">${new Date(x.t).toLocaleDateString('ar-u-nu-latn',{month:'numeric',day:'numeric'})}</text>`; });
+  s.innerHTML=g;
+}
+
+/* ═══════════════ RESULT PANELS ═══════════════ */
+const ICO={
+  game:'<rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 10v4M5 12h4M16 11h.01M18.5 13.5h.01"/>',
+  call:'<rect x="2" y="6" width="13" height="12" rx="3"/><path d="m15 11 7-4v10l-7-4"/>',
+  tv:'<rect x="2" y="4" width="20" height="13" rx="3"/><path d="M8 21h8"/>',
+  up:'<path d="M12 19V7m0 0 4 4m-4-4-4 4M4 20h16"/>',
+  web:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/>',
+  dl:'<path d="M12 5v12m0 0 4-4m-4 4-4-4M4 20h16"/>',
+  wrk:'<rect x="2" y="7" width="20" height="13" rx="3"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>'
+};
+function caps(){
+  const R=S.res, inc=R.inc==null?999:R.inc, dl=R.use||0, ul=R.ul||0,
+        p=R.idle==null?999:R.idle, j=R.jit==null?999:R.jit, ld=R.latDl==null?999:R.latDl, st=R.stab||0;
+  const gb=(v,need)=>clamp(v/need*100,4,100);
+  const L=[
+    {t:'ألعاب الفيديو',i:ICO.game,r:(p<50&&j<12&&inc<60)?'pass':(p<90&&j<25&&inc<200)?'warn':'fail',
+     m:`${fmt(R.idle,0)}ms · تذبذب ${fmt(R.jit,1)} · +${fmt(R.inc,0)} تحت الضغط`,b:gb(120-Math.min(120,p),90)},
+    {t:'مكالمة فيديو HD',i:ICO.call,r:(dl>=4&&ul>=3&&ld<150&&j<30)?'pass':(dl>=2&&ul>=1.5&&ld<300)?'warn':'fail',
+     m:`${asM(dl)}↓ ${asM(ul)}↑ · ${fmt(R.latDl,0)}ms`,b:gb(Math.min(dl/4,ul/3)*4,4)},
+    {t:'بث 4K',i:ICO.tv,r:dl>=25?'pass':dl>=15?'warn':'fail',m:`${asM(dl)} من 25 المطلوبة`,b:gb(dl,25)},
+    {t:'عدّة أجهزة 4K',i:ICO.tv,r:dl>=75?'pass':dl>=40?'warn':'fail',
+     m:`يكفي لـ ${Math.floor(dl/25)} جهاز 4K في نفس الوقت`,b:gb(dl,75)},
+    {t:'رفع وبث مباشر',i:ICO.up,r:ul>=10?'pass':ul>=5?'warn':'fail',m:`${asM(ul)} من 10 المطلوبة`,b:gb(ul,10)},
+    {t:'تنزيل ملف 1GB',i:ICO.dl,r:dl>=50?'pass':dl>=15?'warn':'fail',
+     m:dl>0?`يستغرق ${fmtDur(1024*8/dl)}`:'—',b:gb(dl,50)},
+    {t:'تصفّح بلا انتظار',i:ICO.web,r:(p<80&&dl>=10)?'pass':(p<150&&dl>=4)?'warn':'fail',
+     m:`${fmt(R.idle,0)}ms · ${asM(dl)}`,b:gb(120-Math.min(120,p),60)},
+    {t:'عمل عن بُعد و VPN',i:ICO.wrk,r:(ul>=5&&inc<60&&st>70)?'pass':(ul>=2&&inc<200)?'warn':'fail',
+     m:`رفع ${asM(ul)} · ثبات ${fmt(st,0)}%`,b:gb(ul,5)}
+  ];
+  $('#caps').innerHTML=L.map(v=>`<div class="cap" data-r="${v.r}">
+    <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${v.i}</svg></div>
+    <div style="min-width:0"><div class="t">${v.t}</div><div class="m">${esc(v.m)}</div></div>
+    <div class="bar" style="width:${v.b.toFixed(0)}%"></div></div>`).join('');
+}
+function fmtDur(sec){
+  if(!isFinite(sec)||sec<=0) return '—';
+  if(sec<60) return Math.round(sec)+' ثانية';
+  if(sec<3600) return Math.round(sec/60)+' دقيقة';
+  return (sec/3600).toFixed(1)+' ساعة';
+}
+const mi=(k,v)=>`<div class="mi"><div class="k">${k}</div><div class="v">${v}</div></div>`;
+
+function safeRender(){
+  try{ renderAll(); }
+  catch(e){
+    $('#pScore').classList.add('in'); $('#pTabs').classList.add('in');
+    $('#err').innerHTML='<div class="warn">صار خطأ بعرض النتائج: '+esc(e&&e.message?e.message:e)+'</div>';
+  }
+}
+function renderAll(){
+  const R=S.res, FAIL=[];
+  $('#pScore').classList.add('in'); $('#pTabs').classList.add('in');
+  const m=R.meta||{}, w=R.who||{}, nc=navigator.connection||{};
+  // every panel renders on its own. one bad value can no longer blank the page.
+  const sec=(n,f)=>{ try{ f(); }catch(e){ FAIL.push(n+' — '+((e&&e.message)||e)); } };
+  sec('بطاقات السرعة',()=>{
+  $('#cDlU').textContent=S.unit; $('#cUlU').textContent=S.unit;
+  const drop=(R.sus!=null&&R.dl&&R.sus<R.dl*.8);
+  $('#cDl').firstChild.nodeValue=sp(R.dl);
+  $('#cDlS').textContent = drop ? `تهبط لـ ${sp(R.sus)} بالتنزيل الطويل`
+                                : `مستقرة ${sp(R.sus)} · ذروة ${sp(R.dlPeak)}`;
+  $('#cDlS').style.color = drop?'var(--co)':'';
+  $('#cUl').firstChild.nodeValue=sp(R.ul);
+  $('#cUlS').textContent=S.upOk?`ذروة ${sp(R.ulPeak)}`:'هذا السيرفر ما يدعم الرفع';
+  $('#cPg').firstChild.nodeValue=fmt(R.idle,0);
+  $('#cPgS').textContent=`min ${fmt(R.min,0)} · p95 ${fmt(R.p95,0)} · p99 ${fmt(R.p99,0)}`;
+  $('#cJt').firstChild.nodeValue=fmt(R.jit,1);
+  $('#cJtS').textContent=`تحت الضغط ${fmt(R.jitDl,1)} · قفزات ${R.spikes}`;
+  });
+  sec('الحكم والدرجة',()=>{
+  const g=R.grade;
+  $('#vb').innerHTML=`<div class="vb ${g.c}"><div class="g">${g.g}</div>
+    <div><div class="t">تحت الضغط: ${g.t}</div>
+    <div class="s">${R.inc!=null?`البِنغ يقفز من <b class="num">${fmt(R.idle,0)}</b> إلى <b class="num">${fmt(Math.max(R.latDl||0,R.latUl||0),0)}</b> ms لما تنشغل الشبكة، بزيادة ${fmt(R.inc,0)} ms.`:'ما انقاست.'}</div></div></div>`;
+
+  $('#scVal').textContent=R.score;
+  const C=2*Math.PI*55;
+  $('#scArc').style.strokeDashoffset=C*(1-clamp(R.score/100,0,1));
+  $('#scArc').style.stroke=R.score>=80?'var(--mn)':R.score>=60?'var(--am)':R.score>=40?'#FF8A4C':'var(--co)';
+  $('#bks').innerHTML=R.parts.map(p=>`<div class="bk"><span class="n">${p.n}</span>
+    <span class="t" style="--c:${p.c}"><i style="width:${(p.v/p.m*100).toFixed(0)}%"></i></span>
+    <span class="v">${p.v.toFixed(0)}/${p.m}</span></div>`).join('');
+  caps();
+  });
+  sec('مختبر التأخير',()=>{
+  $('#latG').innerHTML=[mi('p50',fmt(R.idle,0)+' ms'),mi('p95',fmt(R.p95,0)+' ms'),mi('p99',fmt(R.p99,0)+' ms'),
+    mi('أدنى',fmt(R.min,0)+' ms'),mi('تحت التحميل',fmt(R.latDl,0)+' ms'),mi('تحت الرفع',fmt(R.latUl,0)+' ms'),
+    mi('الزيادة',(R.inc==null?'—':'+'+R.inc.toFixed(0))+' ms'),mi('الثبات',fmt(R.stab,0)+'%'),
+    mi('قفزات البِنغ',R.spikes+''),mi('طلبات فاشلة',S.fails+'')].join('');
+  drawLat();
+  });
+  sec('تحديد السرعة',()=>{
+  let sv;
+  if(R.burst){
+    const st=R.shaped?'fail':R.slow?'warn':'pass', cls=R.shaped?'gF':R.slow?'gC':'gA';
+    const ttl=R.shaped?'المزوّد يحدّد سرعتك':R.slow?'الخط يحتاج وقت':'ما في تحديد سرعة';
+    const txt=R.shaped
+      ?`أول 3 ثوانٍ <b class="num">${asM(R.burst.e)}</b> وآخر 3 ثوانٍ <b class="num">${asM(R.burst.l)}</b>، نزول ${(100-100/R.burst.r).toFixed(0)}%. المزوّد يعطيك دفعة بالبداية وبعدين يقلّل. سرعتك بالتنزيل الطويل هي الرقم الثاني.`
+      :R.slow?`بدأ بـ ${asM(R.burst.e)} وانتهى بـ ${asM(R.burst.l)}. المسار بعيد ويحتاج وقت حتى يوصل سرعته، يعني الملفات الصغيرة ما تستفيد من خطك.`
+      :`المعدّل ثابت من أول الفحص لآخره (${asM(R.burst.e)} → ${asM(R.burst.l)}).`;
+    sv=`<div class="vb ${cls}"><div class="g"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17l5-6 4 3 5-8 4 5"/></svg></div>
+      <div><div class="t">${ttl}</div><div class="s">${txt}</div></div></div>`;
+  } else sv=`<div class="vb gN"><div class="g">?</div><div><div class="t">يحتاج فحصاً أطول</div><div class="s">شغّل الوضع القياسي أو العميق حتى نقدر نقارن أول الفحص بآخره.</div></div></div>`;
+  $('#shV').innerHTML=sv; drawShape();
+  $('#shG').innerHTML=[mi('ذروة',sp(R.dl)+' '+S.unit),mi('مستقرة',sp(R.sus)+' '+S.unit),
+    mi('اتصال واحد',sp(R.single)+' '+S.unit),mi('نسبة التوازي',R.ratio?'×'+R.ratio.toFixed(2):'—')].join('')
+    +(R.ratio&&R.ratio>1.8?`<div class="mi" style="grid-column:1/-1"><div class="k">النتيجة</div>
+      <div style="font-size:12.5px;color:var(--dm);margin-top:3px">المزوّد يقيّد كل اتصال لوحده. التنزيل من مصدر واحد يطلع بطيء رغم أن سرعتك عالية. استعمل مدير تنزيل يقسّم الملف لأجزاء.</div></div>`:'');
+  });
+  sec('الألعاب',()=>{
+  const gv=(c)=>`<span style="color:${c}">●</span>`;
+  const gm=[
+    ['بِنغ الأساس (p50)',fmt(R.idle,0)+' ms',R.idle<50?'var(--mn)':R.idle<90?'var(--am)':'var(--co)'],
+    ['أسوأ 5% (p95)',fmt(R.p95,0)+' ms',R.p95<70?'var(--mn)':R.p95<130?'var(--am)':'var(--co)'],
+    ['التذبذب',fmt(R.jit,1)+' ms',R.jit<8?'var(--mn)':R.jit<20?'var(--am)':'var(--co)'],
+    ['قفزات فوق الضعف',R.spikes+' من '+S.idle.length,R.spikes===0?'var(--mn)':R.spikes<3?'var(--am)':'var(--co)'],
+    ['البِنغ لو أحد ينزّل بالبيت',fmt(R.latDl,0)+' ms',(R.latDl||999)<80?'var(--mn)':(R.latDl||999)<160?'var(--am)':'var(--co)'],
+    ['البِنغ لو أحد يرفع',fmt(R.latUl,0)+' ms',(R.latUl||999)<80?'var(--mn)':(R.latUl||999)<160?'var(--am)':'var(--co)']
+  ];
+  $('#gameL').innerHTML=gm.map(r=>`<div class="rw"><span class="n">${r[0]}</span><span class="v" style="color:${r[2]}">${r[1]}</span></div>`).join('');
+  const genre=(n,pm,jm,im)=>{const ok=(R.idle||999)<pm&&(R.jit||999)<jm&&(R.inc==null?999:R.inc)<im;
+    const half=(R.idle||999)<pm*1.6&&(R.jit||999)<jm*2;
+    return mi(n,`<span style="color:${ok?'var(--mn)':half?'var(--am)':'var(--co)'}">${ok?'ممتاز':half?'مقبول':'ضعيف'}</span>`);};
+  $('#gameG').innerHTML=[genre('ألعاب الفيديو السريعة',50,10,60),genre('MOBA / بطاقات',80,18,120),
+    genre('سباقات / قتال',60,12,80),genre('ألعاب دور وبطيئة',150,40,300)].join('');
+
+  });
+  sec('الخوادم والدقة',()=>{
+  const cls=serverClass(m.colo);
+  const gapTxt = (R.intl!=null&&R.dl)
+    ? (R.localBias
+        ? `السيرفر القريب يعطي <b class="num">${asM(R.dl)}</b> والمسار الدولي <b class="num">${asM(R.intl)}</b>، فرق ${R.gap.toFixed(1)}×. الرقم الكبير يقيس ربطك بالمحتوى المخزّن قريب منك مثل يوتيوب وفيسبوك. خطّك الدولي هو الرقم الثاني.`
+        : `السيرفر القريب <b class="num">${asM(R.dl)}</b> والمسار الدولي <b class="num">${asM(R.intl)}</b>. الفرق بسيط، يعني خطّك الدولي قريب من سعتك الكاملة.`)
+    : 'القياس الدولي ما اكتمل. أعِد المحاولة أو حطّ سيرفر مخصص.';
+  if(R.srcCompressed) $('#err').innerHTML='<div class="warn">سيرفر القياس يضغط البيانات، فاللي عبر خطك أقل من اللي وصل المتصفح. الرقم مو صحيح، بدّل السيرفر.</div>';
+  $('#srvV').innerHTML=`<div class="vb ${R.localBias?'gC':'gA'}">
+    <div class="g" style="font-size:13px;line-height:1.15">${cls.k}</div>
+    <div><div class="t">سيرفر القياس: ${esc(m.colo||(S.ep&&S.ep.name)||'—')}${cls.t!=='غير معروف'?' · '+esc(cls.t):''}</div>
+    <div class="s">${gapTxt}</div></div></div>`;
+  drawSweep(); drawCmp();
+  let cv;
+  if(S.sweep&&S.sweep.length>=2){
+    const one=R.intl1, best=R.intl, k=R.knee;
+    const flat=!R.winLimited;
+    cv = flat
+      ? `<div class="vb gA"><div class="g" style="font-size:15px">${k}</div><div>
+         <div class="t">اتصال واحد يملأ المسار</div><div class="s">من اتصال واحد لـ ${S.sweep[S.sweep.length-1].k} اتصالات السرعة ثابتة (${asM(one)} → ${asM(best)}). يعني هذا سقف خطك، وزيادة الاتصالات ما تنفع.</div></div></div>`
+      : `<div class="vb gC"><div class="g" style="font-size:15px">${k}</div><div>
+         <div class="t">المسار يحتاج ${k} اتصالات ليمتلئ</div><div class="s">اتصال واحد يعطي <b class="num">${asM(one)}</b>، وبـ${R.intlK} اتصالات يوصل <b class="num">${asM(best)}</b>، أي ${R.fill.toFixed(1)}×. السبب فقد حزم وطول المسار مو ضعف خطك. نافذة الازدحام ${R.cwnd?(R.cwnd/1024).toFixed(0)+' KB':'—'}.</div></div></div>`;
+  } else cv='';
+  if(R.dispOk){
+    const head=R.dl?Math.max(0,(R.disp/R.dl-1)*100):0;
+    cv += `<div class="vb gA" style="margin-top:8px"><div class="g" style="font-size:13px;line-height:1.1">سعة<br>الخط</div><div>
+      <div class="t">سعة خطك الحقيقية ≈ ${R.capSpread!=null&&R.capSpread>0.12?asM(R.capLo)+' – '+asM(R.capHi):asM(R.disp)}</div>
+      <div class="s">محسوبة من توقيت وصول ${esc((R.dispN||0)+'')} حزمة داخل اتصال واحد. ما تتأثر بعدد الاتصالات ولا بنافذة الازدحام، فتكشف السقف حتى لو TCP عاجز عن ملئه.${head>8?` سرعتك الفعلية أقل منها بـ ${head.toFixed(0)}٪، والفرق ضياع على المسار مو نقص بالخط.`:' وسرعتك الفعلية قريبة منها، يعني الخط مستغَل كامل.'}</div></div></div>`;
+  }
+  $('#capV').innerHTML=cv;
+  $('#accG').innerHTML=[
+    mi('طريقة الحساب','بايتات ÷ زمن'),
+    mi('مدة القياس',R.win?R.win.secs.toFixed(1)+' ث':'—'),
+    mi('حجم العيّنة',R.win?(R.win.bytes/1048576).toFixed(1)+' MB':'—'),
+    mi('قراءات مستقلة',(R.blocks||0)+''),
+    mi('هامش الخطأ ٩٥٪',R.ci!=null?'±'+sp(R.ci):'—'),
+    mi('نسبة الخطأ',R.rel!=null?(R.rel*100).toFixed(1)+'%':'—'),
+    mi('طريقة حساب ثانية',sp(R.dl2)),
+    mi('الفرق بين الطريقتين',R.dis!=null?(R.dis*100).toFixed(1)+'%':'—'),
+    mi('أعلى ١٠٪ من القراءات',sp(R.p90)),
+    mi('مع الترويسات',sp(R.line)),
+    mi('بِنغ دولي',fmt(R.intlPing,0)+' ms'),
+    mi('اتصالات دولية مستقلة',(R.conns||1)+''),
+    mi('سعة الخط',R.dispOk?(R.capSpread!=null&&R.capSpread>0.12?sp(R.capLo)+'–'+sp(R.capHi):sp(R.disp)):`<span style="color:var(--dm)">${esc(R.dispWhy||'—')}</span>`),
+    mi('طريقة حساب السعة',esc(R.method||'—')+(R.fitBins?' · '+R.fitBins+' أحجام':'')),
+    mi('دقة ساعة المتصفّح',(S.res0||0).toFixed(3)+' ms'),
+    mi('تأخير ثابت لكل حزمة',R.fitOvh!=null?R.fitOvh.toFixed(2)+' ms':'—'),
+    mi('ضغط البيانات محلي',R.cfDl!=null?(R.cfDl*100).toFixed(0)+'%':'غير معروفة'),
+    mi('ضغط البيانات دولي',R.cfIntl!=null?(R.cfIntl*100).toFixed(0)+'%':'غير معروفة'),
+    mi('قراءات التوقيت',(R.dispN||0)+(R.dispConc?' · تركّز '+(R.dispConc*100).toFixed(0)+'%':'')),
+    mi('الاتصالات الكافية',(R.knee||'—')+' اتصال'),
+    mi('تطابق الطرق',R.agree?`<span style="color:${R.spread<.15?'var(--mn)':R.spread<.35?'var(--am)':'var(--co)'}">${R.agree} · ${R.spread!=null?(R.spread*100).toFixed(0)+'%':'—'}</span>`:'—'),
+    mi('درجة الثقة',`<span style="color:${R.conf.c}">${R.conf.g} · ${R.conf.t}</span>`)
+  ].join('');
+  });
+  sec('المسار',()=>{
+  const pr=(R.wf&&R.wf.proto)||m.httpProtocol||'—';
+  $('#stG').innerHTML=[mi('البروتوكول',/h3/i.test(pr)?'HTTP/3':/h2/i.test(pr)?'HTTP/2':esc(pr)),
+    mi('IPv6',R.ipv6?'<span style="color:var(--mn)">مدعوم</span>':'<span style="color:var(--co)">غير مدعوم</span>'),
+    mi('نوع الاتصال',esc(nc.effectiveType||nc.type||'—')),mi('السيرفر',esc(m.colo||'—')),
+    mi('المدينة',esc(m.city||w.city||'—')),mi('المزوّد',esc((w.connection&&w.connection.isp)||m.asOrganization||'—')),
+    mi('IP',esc(m.clientIp||w.ip||'—')),mi('البيانات',mb(S.bytes)+' MB'),
+    mi('مدة الفحص',((performance.now()-S.t0)/1000).toFixed(1)+' ث')].join('');
+  drawWf(); setRoute();
+  const ok=S.reach.filter(r=>nn(r.ms)), mx=ok.length?Math.max(...ok.map(r=>r.ms)):1;
+  $('#reachL').innerHTML=S.reach.length?S.reach.map(r=>{
+    const c=r.ms==null?'var(--co)':r.ms<80?'var(--mn)':r.ms<200?'var(--am)':'var(--co)';
+    return `<div class="rw"><span class="n">${esc(r.name)}</span>
+      <span class="tb" style="--c:${c}"><i style="width:${r.ms==null?0:(r.ms/mx*100).toFixed(0)}%"></i></span>
+      <span class="v" style="color:${c}">${r.ms==null?'محجوب':r.ms.toFixed(0)+' ms'}</span></div>`;}).join('')
+    :'<div class="emp">—</div>';
+  });
+  sec('السجل',()=>{
+  drawHist(); histList();
+  });
+  if(FAIL.length){
+    const note='<div class="warn" style="margin-top:10px">تعذّر عرض: '+FAIL.map(esc).join('<br>')+'</div>';
+    $('#err').innerHTML=note; $('#vb').innerHTML+=note;   // visible without scrolling up
+  }
+}
+
+/* ═══════════════ HISTORY / EXPORT ═══════════════ */
+const HK='nabd.v2';
+const loadH=()=>{ try{S.hist=JSON.parse(localStorage.getItem(HK)||'[]');}catch(e){S.hist=[];} };
+function saveH(){ const R=S.res,w=R.who||{},m=R.meta||{};
+  S.hist.push({t:R.when,dl:R.dl,sus:R.sus,ul:R.ul,ping:R.idle,jit:R.jit,score:R.score,grade:R.grade.g,
+    isp:(w.connection&&w.connection.isp)||m.asOrganization||'',mode:S.mode});
+  S.hist=S.hist.slice(-30); try{localStorage.setItem(HK,JSON.stringify(S.hist));}catch(e){} }
+function histList(){ const e=$('#hsL');
+  if(!S.hist.length){ e.innerHTML='<div class="emp">لا سجل بعد</div>'; return; }
+  e.innerHTML=[...S.hist].reverse().map(h=>`<div class="rw">
+    <span class="n">${new Date(h.t).toLocaleString('ar-u-nu-latn',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}</span>
+    <span class="v" style="color:var(--am)">${sp(h.dl)}↓</span><span class="v" style="color:var(--cy)">${sp(h.ul)}↑</span>
+    <span class="v" style="color:var(--mn)">${fmt(h.ping,0)}ms</span><span class="v">${h.score} · ${h.grade}</span></div>`).join(''); }
+function summary(){ const R=S.res,w=R.who||{},m=R.meta||{};
+  return ['نبض — نتيجة الفحص',new Date(R.when).toLocaleString('ar-u-nu-latn'),
+    `تحميل ${asM(R.dl)} · دولي ${asM(R.intl)} · مفرد ${asM(R.single)} · رفع ${asM(R.ul)}`,
+    `السيرفر ${(R.meta||{}).colo||'—'} (${serverClass((R.meta||{}).colo).k}) · ثقة ${R.conf?R.conf.g:'—'} ±${R.rel!=null?(R.rel*100).toFixed(1)+'%':'—'}`,
+    `سعة الخط ${asM(R.disp)} · الاتصالات الكافية ${R.knee||'—'} اتصال · تطابق الطرق ${R.agree||'—'}`,
+    `بِنغ ${fmt(R.idle,0)}ms (p95 ${fmt(R.p95,0)}) · تذبذب ${fmt(R.jit,1)}ms`,
+    `تحت الضغط +${fmt(R.inc,0)}ms · درجة ${R.grade.g}`,
+    R.shaped?`⚠ تحديد سرعة: ${asM(R.burst.e)} → ${asM(R.burst.l)}`:'ما في تحديد سرعة',
+    `${(w.connection&&w.connection.isp)||m.asOrganization||'—'} · ${m.colo||'—'}`,
+    `الجودة ${R.score}/100`].join('\n'); }
+function dl(n,t,ty){ const b=new Blob([t],{type:ty||'application/json'}),u=URL.createObjectURL(b);
+  const a=document.createElement('a'); a.href=u; a.download=n; a.click(); setTimeout(()=>URL.revokeObjectURL(u),2000); }
+function fl(b,t){ const o=b.textContent; b.textContent=t; b.classList.add('ok');
+  setTimeout(()=>{b.textContent=o;b.classList.remove('ok');},1500); }
+
+/* ═══════════════ RUN CONTROL ═══════════════ */
+function syncTabs(){ $$('.dialtabs button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===S.view))); }
+function showView(){
+  const R=S.res;
+  rIdx=0; syncTabs();
+  const v = S.view==='dl'?R.dl : S.view==='ul'?R.ul : R.idle;
+  S.peak=0; $('#peak').innerHTML=''; paintScale();
+  if(v!=null){ setDial(v,R.idle); setBig(v); $('#sPk').textContent = S.view==='pg'?'—':sp(S.view==='dl'?R.dlPeak:R.ulPeak); }
+  else { setDial(null); setBig(null); }
+  $('#sub').textContent = S.view==='dl' && R.sus!=null ? 'مستقرة '+sp(R.sus)
+                        : S.view==='pg' && R.p95!=null ? 'p95 '+fmt(R.p95,0)
+                        : '';
+  setWave();
+}
+function resetRun(){
+  $('#err').innerHTML='';
+  Object.assign(S,{bytes:0,acc:0,disp:0,peak:0,streams:0,dl:[],ul:[],lat:[],idle:[],loadDl:[],loadUl:[],
+    perSize:[],upPerSize:[],dlPhase:null,ulPhase:null,res:{},fails:0,reach:[],dir:null,xhrs:[],
+    sweep:[],tag:'dl',cf:{dl:{e:0,d:0,n:0},single:{e:0,d:0,n:0},intl:{e:0,d:0,n:0}}});
+  try{ performance.clearResourceTimings(); }catch(e){}
+  resetScale(); $('#sPk').textContent='—'; $('#sStr').textContent='0';
+  $('#sData').textContent='0.0'; $('#sTime').textContent='0.0'; $('#sub').textContent='';
+  setDial(0,null); setBig(0); setWave(); prog(0); drawTrace(); drawSparks(); setRoute();
+  $('#glow').style.background='';
+}
+function endRun(){
+  S.running=false; window.__act=0;
+  $('#go').dataset.s='idle'; $('#go').textContent='أعِد الفحص';
+  $('#ledEnd').className='led ok';
+  $$('.mode').forEach(b=>b.disabled=false);
+}
+function stopRun(){
+  S.running=false;
+  try{ if(S.abort) S.abort.abort(); }catch(e){}
+  S.xhrs.forEach(x=>{try{x.abort();}catch(e){}});
+  stopSmp(); ph('أُوقِف'); endRun();
+}
+async function run(){
+  if(S.running) return stopRun();
+  if(!S.ep){ ph('جارٍ الاتصال'); $('#go').textContent='لحظة…'; $('#ledEnd').className='led run';
+    const ok=await health(); $('#go').textContent='ابدأ الفحص';
+    if(!ok){ ph('محجوب'); $('#ledEnd').className='led bad'; return; } }
+  const c=MODES[S.mode];
+  resetRun();
+  S.running=true; S.abort=new AbortController(); S.t0=performance.now();
+  $('#go').dataset.s='run'; $('#go').textContent='إيقاف';
+  $('#ledEnd').className='led run';
+  $$('.mode').forEach(b=>b.disabled=true);
+  startSmp();
+  try{
+    prog(2); await warm();
+    if(S.running) await phIdle(c);
+    if(S.running) await phDown(c);
+    S.res.dq=pct(smooth(series(S.dl,S.dlPhase,.8),5),.9);
+    if(S.running) await phSingle(c);
+    if(S.running) await phUp(c);
+    if(S.running) await phIntl();
+    stopSmp(); S.dir=null;
+    if(!S.idle.length&&!S.dl.length) throw new Error('ما انجمعت أي قياسات.');
+    compute(); S.view='dl'; showView(); safeRender(); saveH(); drawTrace();
+    ph('اكتمل'); prog(94); BG.ping();
+    if(S.running){                       // route / DNS / IPv6 fill in afterwards
+      ph('جارٍ جمع معلومات المسار');
+      await phCtx();
+      if(S.running){ compute(); safeRender(); }
+    }
+    prog(100); ph('اكتمل');
+    const sc=S.res.score;
+    const c1=sc>=80?'67,227,155':sc>=55?'255,176,32':'255,107,91';
+    $('#glow').style.background=`radial-gradient(760px 520px at 50% 4%, rgba(${c1},.15), transparent 60%),
+      radial-gradient(620px 480px at 88% 42%, rgba(47,216,238,.07), transparent 62%),
+      radial-gradient(560px 420px at 8% 62%, rgba(167,139,250,.06), transparent 62%)`;
+  }catch(e){
+    if(S.running) $('#err').innerHTML=`<div class="warn">${esc(e&&e.message?e.message:'خطأ غير متوقع')}. جرّب إيقاف VPN أو مانع الإعلانات وأعِد المحاولة.</div>`;
+    ph('توقّف');
+  }finally{ stopSmp(); endRun(); }
+}
+
+/* ═══════════════ WIRING ═══════════════ */
+function wire(){
+  $('#go').addEventListener('click',run);
+  $$('.mode').forEach(b=>b.addEventListener('click',()=>{
+    $$('.mode').forEach(x=>x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed','true'); S.mode=b.dataset.m; }));
+  $$('.dialtabs button').forEach(b=>b.addEventListener('click',()=>{
+    S.view=b.dataset.v; if(S.res.score!=null) showView(); else { rIdx=0; paintScale(); syncTabs(); setDial(S.disp); } }));
+  $('#dial').addEventListener('click',()=>{
+    const o=['dl','ul','pg'], i=o.indexOf(S.view); S.view=o[(i+1)%3];
+    if(S.res.score!=null) showView(); else { rIdx=0; paintScale(); syncTabs(); setDial(S.disp); } });
+  $('#bUnit').addEventListener('click',()=>{
+    S.unit=S.unit==='Mbps'?'MB/s':'Mbps'; $('#uTxt').textContent=S.unit; $('#un').textContent=S.unit;
+    if(S.res.score!=null){ renderAll(); showView(); } else setBig(S.disp);
+    histList(); });
+  $$('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+    $$('.tabs button').forEach(x=>x.setAttribute('aria-selected','false'));
+    b.setAttribute('aria-selected','true');
+    $$('.pane').forEach(p=>p.hidden=true);
+    const p=b.dataset.p; $('#pane-'+p).hidden=false;
+    requestAnimationFrame(()=>{ if(p==='lat')drawLat(); else if(p==='shape')drawShape();
+      else if(p==='stack'){drawWf();drawCmp();drawSweep();} else if(p==='hist')drawHist(); }); }));
+  $('#bJson').addEventListener('click',e=>{ if(S.res.score==null) return fl(e.currentTarget,'شغّل فحصاً');
+    dl('nabd-'+new Date(S.res.when).toISOString().slice(0,19).replace(/[:T]/g,'-')+'.json',
+      JSON.stringify({tool:'NABD',mode:S.mode,at:new Date(S.res.when).toISOString(),endpoint:S.ep&&S.ep.name,
+        method:{headline:'aggregate bytes/time over steady window',rampExcluded:true,
+          window:S.res.win,ci95:S.res.ci,relError:S.res.rel,independentBlocks:S.res.blocks,
+          secondEstimator:S.res.dl2,disagreement:S.res.dis,p90ForComparison:S.res.p90,
+          confidence:S.res.conf,serverColo:(S.res.meta||{}).colo,
+          serverClass:serverClass((S.res.meta||{}).colo).k,international:S.res.intl},
+        sweep:S.sweep,estimators:S.res.est,dispersionSamples:S.res.dispN,
+        results:S.res,perSize:S.perSize,upPerSize:S.upPerSize,reach:S.reach,
+        samples:{download:S.dl,upload:S.ul,latency:S.lat,idle:S.idle,loadedDl:S.loadDl,loadedUl:S.loadUl}},null,2));
+    fl(e.currentTarget,'تم'); });
+  $('#bCopy').addEventListener('click',async e=>{ if(S.res.score==null) return fl(e.currentTarget,'شغّل فحصاً');
+    try{ await navigator.clipboard.writeText(summary()); fl(e.currentTarget,'نُسِخ'); }
+    catch(x){ dl('nabd.txt',summary(),'text/plain'); fl(e.currentTarget,'نُزِّل'); } });
+  $('#bShare').addEventListener('click',async e=>{ if(S.res.score==null) return fl(e.currentTarget,'شغّل فحصاً');
+    if(navigator.share){ try{ await navigator.share({title:'نبض',text:summary()}); }catch(x){} }
+    else { try{ await navigator.clipboard.writeText(summary()); fl(e.currentTarget,'نُسِخ'); }catch(x){} } });
+  $('#lsSet').addEventListener('click',async e=>{
+    const u=$('#lsUrl').value.trim(); const b=e.currentTarget;
+    if(!u) return fl(b,'ضع رابطاً');
+    const cand=libre(u,'خادم مخصص'); const t=TO(9000);
+    b.textContent='يفحص…';
+    try{
+      const r=await fetch(cand.tiny(),{cache:'no-store',signal:t.signal}); t.done();
+      if(!r.ok) throw new Error();
+      S.ep=cand; S.upOk=true; S.pin=true;
+      $('#endTxt').textContent='خادم مخصص'; $('#ledEnd').className='led ok'; $('#pEnd').classList.add('act');
+      try{ localStorage.setItem('nabd.srv',u); }catch(x){}
+      b.textContent='استخدمه'; fl(b,'تم، شغّل الفحص');
+    }catch(x){ t.done(); b.textContent='استخدمه'; fl(b,'لا يستجيب'); }
+  });
+  $('#lsClr').addEventListener('click',async e=>{
+    S.ep=null; S.pin=false; $('#lsUrl').value='';
+    try{ localStorage.removeItem('nabd.srv'); }catch(x){}
+    await health(); fl(e.currentTarget,'تلقائي');
+  });
+  $('#bClr').addEventListener('click',e=>{ S.hist=[]; try{localStorage.removeItem(HK);}catch(x){}
+    histList(); drawHist(); fl(e.currentTarget,'مُسِح'); });
+  addEventListener('keydown',e=>{ if(e.key===' '&&e.target===document.body){ e.preventDefault(); run(); } });
+  let rz=null;
+  addEventListener('resize',()=>{ clearTimeout(rz); rz=setTimeout(()=>{ drawTrace(); drawHist();
+    if(S.res.score!=null){ drawLat(); drawShape(); drawWf(); drawCmp(); drawSweep(); } },170); });
+}
+
+/* ═══════════════ ANIMATION DRIVER ═══════════════ */
+let _lt=performance.now();
+function loop(now){
+  requestAnimationFrame(loop);
+  const dt=Math.min(.05,(now-_lt)/1000); _lt=now;
+  if(!S.running && window.__act>0.001) window.__act*=.955;
+  dialStep(dt); routeTick(dt);
+}
+
+/* ═══════════════ INIT ═══════════════ */
+function timerRes(){
+  let best=Infinity, prev=performance.now();
+  for(let i=0;i<60000;i++){ const t=performance.now(); if(t>prev){ if(t-prev<best) best=t-prev; prev=t; } }
+  return isFinite(best)?best:0.1;
+}
+(function(){
+  try{ performance.setResourceTimingBufferSize(8000); }catch(e){}
+  S.res0=timerRes();
+  buildDial(); setDial(0,null); setBig(0); setWave();
+  buildRoute(); setRoute();
+  drawTrace(); drawSparks();
+  loadH(); histList(); drawHist();
+  if(S.hist.length) $('#pTabs').classList.add('in');
+  try{ const u=localStorage.getItem('nabd.srv'); if(u){ $('#lsUrl').value=u; S.ep=libre(u,'خادم مخصص'); S.pin=true; S.upOk=true;
+    $('#endTxt').textContent='خادم مخصص'; } }catch(e){}
+  wire(); BG.start();
+  requestAnimationFrame(loop);
+  health();
+})();
+</script>
+</body>
+</html>

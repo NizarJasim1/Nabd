@@ -1,0 +1,6 @@
+.DS_Store
+__MACOSX/
+Thumbs.db
+.netlify/
+node_modules/
+*.log
